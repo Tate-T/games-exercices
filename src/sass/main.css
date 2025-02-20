@@ -178,7 +178,7 @@ body {
   align-items: flex-start;
   gap: 10px;
   border-radius: 20px;
-  background: #D7D7D7;
+  background: #d7d7d7;
   border: none;
 }
 .leap-year__button {
@@ -189,15 +189,13 @@ body {
   width: 40px;
   border-radius: 0px 20px 20px 0px;
 }
-.leap-year__img use {
-  fill: white;
-}
 .leap-year__img {
   width: 20px;
   height: 20px;
-  position: fixed;
+  position: absolute;
   margin-top: -10px;
   margin-left: -12px;
+  fill: white;
 }
 .leap-year__result {
   position: absolute;
@@ -209,11 +207,106 @@ body {
   font-size: 12px;
 }
 
+.rsp__line {
+  width: 536px;
+  height: 1px;
+  background-color: #000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.rsp__all-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 208px;
+}
+.rsp__title {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.rsp__choice {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 36px 36px;
+  gap: 38px;
+}
+.rsp__choice-img {
+  display: inline-flex;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: #000;
+}
+.rsp__results-desc {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+}
+.rsp__text {
+  margin-bottom: 36px;
+  color: #039900;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.rsp__computer-button {
+  color: #FFF;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: inline-flex;
+  padding: 10px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: #000;
+}
+.rsp__results-box {
+  margin-left: 104px;
+}
+.rsp__info-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.time-calculator__line {
+  width: 736px;
+  height: 1px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+  background-color: #000;
+  border: none;
+  margin-bottom: 36px;
+}
+
 .footer__container {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #fff;
-  padding: 75px 0;
+  padding-top: 61px;
+  padding-bottom: 59px;
+  width: auto;
 }
 .footer__logo {
   margin-right: 185px;

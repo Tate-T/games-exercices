@@ -1,0 +1,13 @@
+.time-calculator{
+
+
+&__line {
+    width: 736px;
+    height: 1px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    background-color: #000;
+    border: none;
+    margin-bottom: 36px;
+  }
+}

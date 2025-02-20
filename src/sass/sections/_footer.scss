@@ -2,8 +2,11 @@
     &__container {
         display: flex;
         align-items: center;
+        justify-content: center;
         background-color: #fff;
-        padding: 75px 0;
+        padding-top: 61px;
+        padding-bottom: 59px;
+        width: auto;
     }
 
     &__logo {
