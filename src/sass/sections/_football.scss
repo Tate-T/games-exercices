@@ -1,0 +1,44 @@
+.football {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__line {
+        width: 536px;
+        height: 1px;
+        background-color: #000;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 36px;
+    }
+
+    &__title {
+        margin-bottom: 36px;
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__field {
+        cursor: url(/src/img/football-cursor.png), auto;
+        width: 720px;
+        height: 220px;
+        flex-shrink: 0;
+        border-radius: 37px;
+        border: 2px solid #000;
+        background: #5ABB58;
+    }
+
+    &__ball {
+        width: 50px;
+        height: 50px;
+    }
+
+}
