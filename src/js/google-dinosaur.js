@@ -15,8 +15,12 @@ const imageGame = [
   }
   
   document.addEventListener("keydown", (event) => {
-    event.preventDefault()
-    console.log(event.code);
+    if (event.target && event.target.value !== undefined) {
+      return;
+    }
+  
+    event.preventDefault();
+  
     if (event.code === "Space") {
       getImg.src = nextImg();
     }
