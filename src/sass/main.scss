@@ -1,5 +1,6 @@
 @use "./base/reset" as *;
 @use "./base/common" as *;
+@use "./modal/open-modal" as *;
 @use "./modal/footer-modal" as *;
 @use "./sections/header" as *;
 @use "./sections/biggest-number" as *;
