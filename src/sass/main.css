@@ -408,6 +408,10 @@ body.show-modal .backdrop {
   margin-right: auto;
 }
 
+.leap-year__container {
+  background-color: #fff;
+  width: 1160px;
+}
 .leap-year__title-box {
   color: #000;
   font-family: "Montserrat Alternates";
