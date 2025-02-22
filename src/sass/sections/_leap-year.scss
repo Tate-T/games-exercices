@@ -6,7 +6,8 @@
     font-weight: 400;
     text-align: center;
     padding-top: 30px;
-    margin-bottom: 36px;
+    padding-bottom: 36px;
+
   }
   &__line {
     width: 736px;
@@ -41,10 +42,11 @@
     gap: 10px;
     border-radius: 20px;
     background: #d7d7d7;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
     border: none;
   }
   &__button {
-    margin-left: -20px;
+    margin-left: -40px;
     padding: 13px;
     height: 36px;
     background-color: #000;
@@ -62,8 +64,7 @@
   }
   &__result {
     position: absolute;
-    right: 80px;
-    bottom: 475px;
+    right: 500px;
     font-family: "Montserrat Alternates";
     font-weight: 400;
     text-align: right;
