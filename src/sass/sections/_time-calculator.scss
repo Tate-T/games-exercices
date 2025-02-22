@@ -1,7 +1,90 @@
 .time-calculator{
-
-
-&__line {
+    padding-bottom: 36px;
+  
+    &-title {
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      line-height: normal;
+      text-align: center;
+      font-weight: 400;
+    }
+  
+    &__content {
+      background-color: #fff;
+    }
+  
+    &-form {
+      position: relative;
+      width: 160px;
+    }
+  
+    &-box {
+      display: flex;
+      margin: 36px auto;
+      width: 100%;
+      max-width: 466px;
+    }
+  
+    &-time-div {
+      border: 1px dashed;
+      height: 0px;
+      width: 100px;
+      margin-left: 28px;
+      margin-right: 28px;
+      margin-bottom: 18px;
+      margin-top: 18px;
+    }
+  
+    &-input {
+      border-radius: 20px;
+      background: #d7d7d7;
+      display: inline-flex;
+      padding: 10px 20px;
+      align-items: center;
+      border: none;
+      width: 100%;
+      max-width: 150px;
+      color: #000;
+      font-size: 12px;
+      font-weight: 400;
+      box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+      margin-bottom: 10px;
+  
+      &::placeholder {
+        color: #7e7e7e;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+  
+    &-button {
+      background-color: #000;
+      border-radius: 0px 20px 20px 0px;
+      height: 34px;
+      width: 37px;
+      position: absolute;
+      top: 0px;
+      right: 8px;
+    }
+  
+    &-icons {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      margin-top: -11px;
+      margin-left: -12px;
+      fill: white;
+    }
+  
+    &-time {
+      color: #000;
+      font-size: 12px;
+      line-height: normal;
+      margin-top: 10px;
+      text-align: center;
+    }
+  &__line {
     width: 736px;
     height: 1px;
     flex-shrink: 0;
