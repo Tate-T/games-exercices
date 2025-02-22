@@ -9,6 +9,7 @@ openFooterModalButton.addEventListener("click", (event) => {
 });
 
 closeFooterModalButton.addEventListener("click", (event) => {
+    event.preventDefault();
     bodyElement.classList.remove("show-modal");
     bodyElement.classList.remove("no-scroll");
 });
