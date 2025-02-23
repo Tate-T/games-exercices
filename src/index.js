@@ -9,4 +9,5 @@ import "./js/time-calculator.js"
 import "./js/leap-year.js"
 import "./js/rock-scissors-paper.js"
 import "./js/guess-number.js"
+import "./js/choose-scientist.js
 import "./js/footer.js"
