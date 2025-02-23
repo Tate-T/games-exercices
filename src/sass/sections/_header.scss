@@ -1,10 +1,10 @@
 .header {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    background: #EEE;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background: #eee;
 }
 
 .header-logo {
@@ -33,32 +33,79 @@
   line-height: normal;
 }
 .site-interaktiv-list {
-    display: flex ;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
 }
 .site-interaktiv {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .svg-interaktiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    pointer-events: none;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
 }
 
 #dark-mode-change {
-    margin-left: auto;
-    margin-right: 50px;
+  margin-left: auto;
+  margin-right: 50px;
 }
 .header-hello-user {
-    color: #000;
-text-align: right;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #000;
+  text-align: right;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sec-select {
+  border-radius: 0px 0px 20px 20px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: -30%;
+  width: max-content;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
+
+.sec-select.visible {
+  opacity: 1;
+  visibility: visible;
+  max-height: 500px; /* Можна налаштувати для більшого або меншого ефекту */
+}
+
+.sec-select-item {
+  width: 160px;
+  height: 35px;
+  background: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sec-select-item:hover {
+  background-color: #f1f1f1;
+}
+
+.bottom-radius {
+  border-radius: 0px 0px 20px 20px;
+}
+
+.site-interaktiv {
+  position: relative;
+}
+
+section.hidden {
+  display: none;
 }
