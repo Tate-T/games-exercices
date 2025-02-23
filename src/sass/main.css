@@ -137,6 +137,169 @@ body {
   line-height: normal;
 }
 
+.calculator {
+  background-color: #fff;
+  width: 730px;
+  height: 220px;
+  padding-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.calculator__title {
+  padding-bottom: 20px;
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 18px;
+  font-weight: 400;
+}
+.calculator__list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.calculator__input-1, .calculator__input-2, .calculator__input-3 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  color: #7e7e7e;
+  padding: 10px;
+  width: 170px;
+  height: 32px;
+  border-radius: 40px;
+  text-align: center;
+}
+.calculator__elem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.calculator__row {
+  display: flex;
+  gap: 5px;
+}
+.calculator__button {
+  background-color: #000;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s;
+}
+.calculator__button:hover {
+  background-color: #333;
+}
+.calculator__dorivnue {
+  background-color: #000;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculator__line {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.randnumb {
+  background-color: #fff;
+  width: 596px;
+  height: 132px;
+  padding-top: 32px;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: -80px;
+}
+.randnumb__input-wrapper {
+  display: flex;
+  padding: 31px;
+}
+.randnumb__title {
+  padding-left: 90px;
+  padding-bottom: 31px;
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 18px;
+  font-weight: 400;
+}
+.randnumb__line {
+  width: 730px;
+  height: 0.5px;
+  margin-left: -95px;
+  background-color: #000;
+}
+.randnumb__icons {
+  fill: #fff;
+  margin: 0;
+  padding-top: 0;
+}
+.randnumb__button {
+  background-color: black;
+  padding-bottom: 3px;
+  border-start-end-radius: 20px;
+  border-end-end-radius: 20px;
+  position: relative;
+  width: 40px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.randnumb__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.randnumb__input {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  color: #7e7e7e;
+  border-start-start-radius: 20px;
+  border-end-start-radius: 20px;
+  padding: 16px 45px 15px 10px;
+  width: 170px;
+  height: 32px;
+}
+.randnumb__message {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.win {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: right;
+  color: #039900;
+}
+
+.lose {
+  color: red;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: right;
+}
+
 .leap-year__title-box {
   color: #000;
   font-family: "Montserrat Alternates";
