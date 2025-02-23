@@ -1,0 +1,66 @@
+.scientist {
+
+    &__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
+    &__box {
+        width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 59px;
+        margin-top: 36px;
+    }
+
+    &__button {
+        border-radius: 20px;
+        background: #000;
+        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+        display: inline-flex;
+        padding: 10px 20px;
+        align-items: flex-start;
+        color: #FFF;
+        text-align: right;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__button-box {
+        display: flex;
+        align-items: center;
+        gap: 36px;
+        margin-top: 36px;
+    }
+
+    &__button-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: end;
+        gap: 20px; 
+    }
+    &__button-list2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
