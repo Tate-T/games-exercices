@@ -1,46 +1,45 @@
 .leap-year {
-
-  &__container {
-    
+&__container {
+  background-color: #fff;
+  width: 1160px;
   }
+
+
   &__title-box {
     color: #000;
-    font-family: 'Montserrat Alternates';
+    font-family: "Montserrat Alternates";
     font-size: 24px;
     font-weight: 400;
     text-align: center;
     padding-top: 30px;
-    margin-bottom: 36px;
+    padding-bottom: 36px;
+
   }
-  &__line{
+  &__line {
     width: 736px;
-height: 1px;
-flex-shrink: 0;
-stroke-width: 1px;
-background-color: #000;
-border: none;
-margin-bottom: 36px;
-  }
-  &__title {
-  }
-  &__box {
+    height: 1px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    background-color: #000;
+    border: none;
+    margin-bottom: 36px;
   }
   &__text {
     text-align: center;
     color: #000;
-    font-family: 'Montserrat Alternates';
+    font-family: "Montserrat Alternates";
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 36px;
-}
-&__form {
+  }
+  &__form {
     display: flex;
     justify-content: center;
-padding-bottom: 30px;
-padding-left: 0;
-margin-right: 400px;
-}
-&__input {
+    padding-bottom: 30px;
+    padding-left: 0;
+    margin-right: 400px;
+  }
+  &__input {
     width: 220px;
     height: 36px;
     display: inline-flex;
@@ -48,35 +47,33 @@ margin-right: 400px;
     align-items: flex-start;
     gap: 10px;
     border-radius: 20px;
-    background: #D7D7D7;
+    background: #d7d7d7;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
     border: none;
-}
-&__button {
-    margin-left: -20px;
+  }
+  &__button {
+    margin-left: -40px;
     padding: 13px;
     height: 36px;
     background-color: #000;
     width: 40px;
     border-radius: 0px 20px 20px 0px;
-}
-&__img use {
-    fill: white;
-}
+  }
 
-&__img {
+  &__img {
     width: 20px;
     height: 20px;
-    position: fixed;
+    position: absolute;
     margin-top: -10px;
     margin-left: -12px;
-}
-&__result {
+    fill: white;
+  }
+  &__result {
     position: absolute;
-right: 80px;
-bottom: 475px;
-    font-family: 'Montserrat Alternates';
+    right: 500px;
+    font-family: "Montserrat Alternates";
     font-weight: 400;
     text-align: right;
     font-size: 12px;
-}
+  }
 }

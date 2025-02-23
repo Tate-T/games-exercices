@@ -1,0 +1,93 @@
+.rsp {
+
+    &__line {
+        width: 736px;
+        height: 1px;
+        background-color: #000;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    &__all-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 208px;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__choice {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 36px 36px;
+        gap: 38px;
+    }
+
+    &__choice-img {
+        display: inline-flex;
+        padding: 10px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 20px;
+        background: #000;
+    }
+
+    &__results-desc {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%;
+    }
+
+    &__text {
+        margin-bottom: 36px;
+        color: #039900;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__computer-button {
+        color: #FFF;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: inline-flex;
+        padding: 10px 20px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 20px;
+        background: #000;
+    }
+
+    &__results-box {
+        margin-left: 104px;
+    }
+
+    &__info-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
