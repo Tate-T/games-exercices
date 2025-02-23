@@ -8,6 +8,14 @@
       line-height: normal;
       text-align: center;
       font-weight: 400;
+
+      @media screen and (min-width: 768px) {
+        font-size: 20px;
+      }
+  
+      @media screen and (min-width: 1200px) {
+        font-size: 24px;
+      }
     }
   
     &__content {
@@ -17,6 +25,8 @@
     &-form {
       position: relative;
       width: 160px;
+
+     
     }
   
     &-box {
@@ -24,6 +34,13 @@
       margin: 36px auto;
       width: 100%;
       max-width: 466px;
+      flex-direction: column;
+      align-items: center;
+
+      @media screen and (min-width: 767px) {
+      flex-direction: row;
+      }
+      
     }
   
     &-time-div {
@@ -34,6 +51,8 @@
       margin-right: 28px;
       margin-bottom: 18px;
       margin-top: 18px;
+
+    
     }
   
     &-input {
@@ -50,6 +69,10 @@
       font-weight: 400;
       box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
       margin-bottom: 10px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+      }
   
       &::placeholder {
         color: #7e7e7e;
@@ -66,8 +89,8 @@
       position: absolute;
       top: 0px;
       right: 8px;
+
     }
-  
     &-icons {
       width: 20px;
       height: 20px;
@@ -83,14 +106,26 @@
       line-height: normal;
       margin-top: 10px;
       text-align: center;
+
+      @media screen and (min-width: 768px) {
+        margin-left: 23px;
+      }
     }
   &__line {
-    width: 736px;
+    width: 320px;
     height: 1px;
     flex-shrink: 0;
     stroke-width: 1px;
     background-color: #000;
     border: none;
     margin-bottom: 36px;
+
+    @media screen and (min-width: 768px) {
+      width: 600px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 736px;
+    }
   }
 }
