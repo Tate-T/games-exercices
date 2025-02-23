@@ -1,19 +1,28 @@
 .leap-year {
-&__container {
-  background-color: #fff;
-  width: 1160px;
+  &__container {
+    background-color: #fff;
+    width: 1160px;
   }
-
 
   &__title-box {
     color: #000;
-    font-family: "Montserrat Alternates";
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 36px;
+    font-family: Montserrat Alternates;
+    padding-top: 15px;
+    padding-bottom: 20px;
 
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+      font-weight: 400;
+      padding-top: 30px;
+      padding-bottom: 36px;
+    }
+
+    @media screen and (min-width: 1090px) {
+      font-size: 24px;
+    }
   }
   &__line {
     width: 736px;
@@ -51,13 +60,32 @@
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
     border: none;
   }
+
   &__button {
-    margin-left: -40px;
-    padding: 13px;
+    margin-right: 570px;
+    margin-top: -45px;
     height: 36px;
     background-color: #000;
     width: 40px;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0 20px 20px 0;
+    position: fixed;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      bottom: 46px;
+      right: -280px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px){
+      flex-direction: row;
+    }
+
+  
   }
 
   &__img {
@@ -70,10 +98,22 @@
   }
   &__result {
     position: absolute;
-    right: 500px;
     font-family: "Montserrat Alternates";
     font-weight: 400;
     text-align: right;
     font-size: 12px;
+     right: 120px;
+
+   
+    @media screen and (min-width: 768px) {
+      right: 255px;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+      text-align: right;
+      font-size: 12px;
+      right: 335px;
+    }
   }
 }
