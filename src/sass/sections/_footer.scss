@@ -2,48 +2,125 @@
     &__container {
         display: flex;
         align-items: center;
-        justify-content: center;
         background-color: #fff;
-        padding-top: 61px;
-        padding-bottom: 59px;
-        width: auto;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+            padding-top: 25px;
+            padding-bottom: 25px;
+          }
+      
+          @media screen and (min-width: 768px) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+          }
+      
+          @media screen and (min-width: 1200px) {
+            padding-top: 75px;
+            padding-bottom: 75px;
+          }
     }
 
     &__logo {
-        margin-right: 185px;
+        @media screen and (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+          }
+      
+          @media screen and (min-width: 768px) {
+            margin-right: 80px;
+          }
+      
+          @media screen and (min-width: 1200px) {
+            margin-right: 185px;
+          }
     }
 
     &__icon {
         flex-shrink: 0;
-        width: 165px;
-        height: 70px;
-        position: relative;
+width: 150px;
+            height: 60px;
+      
+      
+          @media screen and (min-width: 1200px) {
+            width: 165px;
+            height: 70px;
+          }
     }
 
     &__list {
-        margin: 20px 165px 20px 100px;
+        margin-left: 150px;
+        margin-right: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+      margin-right: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 165px;
+    }
     }
 
     &__item {
         color: #000;
         font-family: "Montserrat Alternates";
         line-height: 1.7;
-        font-size: 12px;
-        font-weight: 400;
+        font-style: normal;
+        font-weight: 300;
+
+        @media screen and (max-width: 768px) {
+            font-size: 9px;
+          }
+      
+          @media screen and (min-width: 768px) {
+            font-size: 10px;
+          }
+      
+          @media screen and (min-width: 1200px) {
+            font-size: 12px;
+            font-weight: 400;
+          }
     }
 
     &__form-email {
         display: inline-flex;
         align-items: flex-start;
         border-radius: 20px;
-        background: #d7d7d7;
         border: none;
+        line-height: normal;
+        background: #d7d7d7;
         color: #7e7e7e;
-        font-family: "Montserrat Alternates";
-        font-size: 12px;
-        font-weight: 400;
-        padding: 10px 37px 10px 10px;
-        margin: 0 26px 18px 0;
+        font-style: normal;
+        font-family: 'Montserrat Alternates';
+
+        @media screen and (max-width: 768px) {
+            margin-left: 140px;
+            margin-bottom: 10px;
+            font-size: 9px;
+            font-weight: 200;
+            padding: 10px 37px 10px 10px;
+          }
+      
+          @media screen and (min-width: 768px) {
+            font-size: 10px;
+            font-weight: 200;
+            padding: 10px;
+            margin-right: 16px;
+            margin-bottom: 8px;
+          }
+      
+          @media screen and (min-width: 1200px) {
+            font-size: 12px;
+            font-weight: 400;
+            padding: 10px 37px 10px 10px;
+            margin-right: 26px;
+            margin-bottom: 18px;
+          }
     }
 
     &__button {
@@ -54,10 +131,22 @@
         background: #000;
         color: #fff;
         font-family: "Montserrat Alternates";
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 400;
+        font-weight: 200;
         padding: 10px;
         border: none;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+            margin-left: 180px;
+            margin-bottom: 10px;
+        }
+      
+          @media screen and (min-width: 1200px) {
+            font-size: 12px;
+            font-weight: 400;
+          }
     }
 
     &__subscribe {
@@ -65,7 +154,13 @@
         font-family: "Montserrat Alternates";
         font-size: 6px;
         font-weight: 400;
-        margin-left: 40px;
+        margin-left: 120px;
+
+            @media screen and (min-width: 768px) {
+              margin-left: 0;
+            }
+      
+ 
     }
 
     &__link {
