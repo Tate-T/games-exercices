@@ -14,3 +14,30 @@
 @use "./sections/rock-scissors-paper" as *;
 @use "./sections/time-calculator" as *;
 @use "./sections/footer" as *;
+
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button.dark-mode {
+    background-color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+
+  body.dark-mode {
+    background-color: #121212;
+    
+  }
+  
+  button.dark-mode {
+    background-color: #ffffff;
+    color: #000;
+  }
+  
