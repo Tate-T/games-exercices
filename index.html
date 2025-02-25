@@ -23,11 +23,12 @@
         background-image: url("/games-exercices/assets/main-back-f3516bc0.webp");
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
       }
     </style>
     <title>Coding Magic</title>
     <script type="module" crossorigin src="/games-exercices/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/games-exercices/assets/index-5fa0f044.css">
+    <link rel="stylesheet" href="/games-exercices/assets/index-d55f246d.css">
   </head>
   <body>
     <section class="container">
@@ -340,112 +341,124 @@
         <h2 class="scientist__title">Обери вченого/их</h2>
         <ul class="scientist__box">
             <li class="scientist__item">
-                <div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQfSURBVHgB7dpNUhpRFIbh223pQCdkBzAQxImyAnEJ2UGyAmUFyArEFURXkCWIK5CMsHCQ3kGYyIwm51BAKUF++xsY36eK2PxVpYq3Tl8uHYUNdTqd6s7OzslwOKza3dMoinJ2nAv4sOwz7NlnmNih39ppmj6Uy+VW2EC0zosfHx9z+/v7l/YfuCCiTyOxz7s1GAwaFlmy6ptWCsuDOjg4uLKYLgI+LQvsdtXAlob19PR0GcdxnQmFscRuV6VS6W7RixaG1e12m0wpzGPTq1ksFmvvPj/vwfGp7+d4YQ68p93v988rlUpv9ol43qttgX5PVFjBqQ+geU/8E5af/vwNAViBDyBr5nr28TenQtub+mYL9R8BWJN9W6wdHx83J/enYVlUeYvq3g7zAVhfz9Zbhcl6a3oqtF30eiAqbM6/8NUnd0YTazytfgdgSza1vvjUGk2s8bQCtmY7CqN9z1FYbC0gQ5f+T+RXKYwX7UAm0jQ9t6biswBkyH7uOfGw2AxF1qqxra/yAciQTaxTX7znA5CtXMx1VhDIxQEQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQSKOoqgXgGz14uFwSFjIWhKbdgAyZMMq8YnVCkCGbHnVjgeDwa8AZMjOgq3ID7rd7h+bXLkAbC8plUqF0XaDRdUMQAYmS6tRWHt7ezcByICF1fC/o7AKhULPFlxMLWzForotl8uJH0933nd3dxtslmILyWRauWlYPrXSNG0EYDNXk2nl3vxWeHR01OSUiHX5lz/7Jnj3+rFo3gtt++HeXlwNwHJti6oy++DcqxtsvfXVd08DsIBvLfT7/fN5z0WL3miT69refBmAGX76s6VT7b3nF16PVSwWa7ag/26HSQDC6HfAng+bRVG5pRf62Ur/1uI69z2KgE/Np9TLy0vBolq6oR6FNXQ6nbwVW7db1e7mA/574wnVtLXUTaVSWXmfc62wXnt+fj6zSVa1w1O7eXB5fsj+2Dwi+0z9V5i23Vr+9/Dw8CFs4C9ETB3tPd812AAAAABJRU5ErkJggg==" alt="">
-                    <div class="scientist__backdrop">
-                        <p class="scientist__description">Albert Einstein <br>1879-1955</p>
+                <div class="scientist__item-box" id="1">
+                    <img class="scientist__image" src="../img/albert-einstein.jpg" alt="">
+                    <div>
+                        <div class="scientist__backdrop">
+                            <p class="scientist__description">Albert Einstein <br>1879-1955</p>
+                        </div>
+                        </img>
                     </div>
-                    </img>
-                </div>
             </li>
             <li class="scientist__item">
-                <div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQfSURBVHgB7dpNUhpRFIbh223pQCdkBzAQxImyAnEJ2UGyAmUFyArEFURXkCWIK5CMsHCQ3kGYyIwm51BAKUF++xsY36eK2PxVpYq3Tl8uHYUNdTqd6s7OzslwOKza3dMoinJ2nAv4sOwz7NlnmNih39ppmj6Uy+VW2EC0zosfHx9z+/v7l/YfuCCiTyOxz7s1GAwaFlmy6ptWCsuDOjg4uLKYLgI+LQvsdtXAlob19PR0GcdxnQmFscRuV6VS6W7RixaG1e12m0wpzGPTq1ksFmvvPj/vwfGp7+d4YQ68p93v988rlUpv9ol43qttgX5PVFjBqQ+geU/8E5af/vwNAViBDyBr5nr28TenQtub+mYL9R8BWJN9W6wdHx83J/enYVlUeYvq3g7zAVhfz9Zbhcl6a3oqtF30eiAqbM6/8NUnd0YTazytfgdgSza1vvjUGk2s8bQCtmY7CqN9z1FYbC0gQ5f+T+RXKYwX7UAm0jQ9t6biswBkyH7uOfGw2AxF1qqxra/yAciQTaxTX7znA5CtXMx1VhDIxQEQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQSKOoqgXgGz14uFwSFjIWhKbdgAyZMMq8YnVCkCGbHnVjgeDwa8AZMjOgq3ID7rd7h+bXLkAbC8plUqF0XaDRdUMQAYmS6tRWHt7ezcByICF1fC/o7AKhULPFlxMLWzForotl8uJH0933nd3dxtslmILyWRauWlYPrXSNG0EYDNXk2nl3vxWeHR01OSUiHX5lz/7Jnj3+rFo3gtt++HeXlwNwHJti6oy++DcqxtsvfXVd08DsIBvLfT7/fN5z0WL3miT69refBmAGX76s6VT7b3nF16PVSwWa7ag/26HSQDC6HfAng+bRVG5pRf62Ur/1uI69z2KgE/Np9TLy0vBolq6oR6FNXQ6nbwVW7db1e7mA/574wnVtLXUTaVSWXmfc62wXnt+fj6zSVa1w1O7eXB5fsj+2Dwi+0z9V5i23Vr+9/Dw8CFs4C9ETB3tPd812AAAAABJRU5ErkJggg==" alt="">
-                    <div class="scientist__backdrop">
-                        <p class="scientist__description">Isaac Newton <br>1643-1727</p>
+                <div class="scientist__item-box" id="2">
+                    <img class="scientist__image" src="../img/isaac-newton.jpg" alt="">
+                    <div>
+                        <div class="scientist__backdrop">
+                            <p class="scientist__description">Isaac Newton <br>1643-1727</p>
+                        </div>
+                        </img>
                     </div>
-                    </img>
-                </div>
             </li>
             <li class="scientist__item">
-                <div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQfSURBVHgB7dpNUhpRFIbh223pQCdkBzAQxImyAnEJ2UGyAmUFyArEFURXkCWIK5CMsHCQ3kGYyIwm51BAKUF++xsY36eK2PxVpYq3Tl8uHYUNdTqd6s7OzslwOKza3dMoinJ2nAv4sOwz7NlnmNih39ppmj6Uy+VW2EC0zosfHx9z+/v7l/YfuCCiTyOxz7s1GAwaFlmy6ptWCsuDOjg4uLKYLgI+LQvsdtXAlob19PR0GcdxnQmFscRuV6VS6W7RixaG1e12m0wpzGPTq1ksFmvvPj/vwfGp7+d4YQ68p93v988rlUpv9ol43qttgX5PVFjBqQ+geU/8E5af/vwNAViBDyBr5nr28TenQtub+mYL9R8BWJN9W6wdHx83J/enYVlUeYvq3g7zAVhfz9Zbhcl6a3oqtF30eiAqbM6/8NUnd0YTazytfgdgSza1vvjUGk2s8bQCtmY7CqN9z1FYbC0gQ5f+T+RXKYwX7UAm0jQ9t6biswBkyH7uOfGw2AxF1qqxra/yAciQTaxTX7znA5CtXMx1VhDIxQEQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQSKOoqgXgGz14uFwSFjIWhKbdgAyZMMq8YnVCkCGbHnVjgeDwa8AZMjOgq3ID7rd7h+bXLkAbC8plUqF0XaDRdUMQAYmS6tRWHt7ezcByICF1fC/o7AKhULPFlxMLWzForotl8uJH0933nd3dxtslmILyWRauWlYPrXSNG0EYDNXk2nl3vxWeHR01OSUiHX5lz/7Jnj3+rFo3gtt++HeXlwNwHJti6oy++DcqxtsvfXVd08DsIBvLfT7/fN5z0WL3miT69refBmAGX76s6VT7b3nF16PVSwWa7ag/26HSQDC6HfAng+bRVG5pRf62Ur/1uI69z2KgE/Np9TLy0vBolq6oR6FNXQ6nbwVW7db1e7mA/574wnVtLXUTaVSWXmfc62wXnt+fj6zSVa1w1O7eXB5fsj+2Dwi+0z9V5i23Vr+9/Dw8CFs4C9ETB3tPd812AAAAABJRU5ErkJggg==" alt="">
-                    <div class="scientist__backdrop">
-                        <p class="scientist__description">Galileo Galilei <br>1564-1642</p>
+                <div class="scientist__item-box" id="3">
+                    <img class="scientist__image" src="../img/galileo-galilei.jpg" alt="">
+                    <div>
+                        <div class="scientist__backdrop">
+                            <p class="scientist__description">Galileo Galilei <br>1564-1642</p>
+                        </div>
+                        </img>
                     </div>
-                    </img>
-                </div>
             </li>
             <li class="scientist__item">
-                <div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQfSURBVHgB7dpNUhpRFIbh223pQCdkBzAQxImyAnEJ2UGyAmUFyArEFURXkCWIK5CMsHCQ3kGYyIwm51BAKUF++xsY36eK2PxVpYq3Tl8uHYUNdTqd6s7OzslwOKza3dMoinJ2nAv4sOwz7NlnmNih39ppmj6Uy+VW2EC0zosfHx9z+/v7l/YfuCCiTyOxz7s1GAwaFlmy6ptWCsuDOjg4uLKYLgI+LQvsdtXAlob19PR0GcdxnQmFscRuV6VS6W7RixaG1e12m0wpzGPTq1ksFmvvPj/vwfGp7+d4YQ68p93v988rlUpv9ol43qttgX5PVFjBqQ+geU/8E5af/vwNAViBDyBr5nr28TenQtub+mYL9R8BWJN9W6wdHx83J/enYVlUeYvq3g7zAVhfz9Zbhcl6a3oqtF30eiAqbM6/8NUnd0YTazytfgdgSza1vvjUGk2s8bQCtmY7CqN9z1FYbC0gQ5f+T+RXKYwX7UAm0jQ9t6biswBkyH7uOfGw2AxF1qqxra/yAciQTaxTX7znA5CtXMx1VhDIxQEQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQSKOoqgXgGz14uFwSFjIWhKbdgAyZMMq8YnVCkCGbHnVjgeDwa8AZMjOgq3ID7rd7h+bXLkAbC8plUqF0XaDRdUMQAYmS6tRWHt7ezcByICF1fC/o7AKhULPFlxMLWzForotl8uJH0933nd3dxtslmILyWRauWlYPrXSNG0EYDNXk2nl3vxWeHR01OSUiHX5lz/7Jnj3+rFo3gtt++HeXlwNwHJti6oy++DcqxtsvfXVd08DsIBvLfT7/fN5z0WL3miT69refBmAGX76s6VT7b3nF16PVSwWa7ag/26HSQDC6HfAng+bRVG5pRf62Ur/1uI69z2KgE/Np9TLy0vBolq6oR6FNXQ6nbwVW7db1e7mA/574wnVtLXUTaVSWXmfc62wXnt+fj6zSVa1w1O7eXB5fsj+2Dwi+0z9V5i23Vr+9/Dw8CFs4C9ETB3tPd812AAAAABJRU5ErkJggg==" alt="">
-                    <div class="scientist_backdrop">
-                        <p class="scientist__description">Marie Curie <br>1867-1934</p>
+                <div class="scientist__item-box" id="4">
+                    <img class="scientist__image" src="../img/marie-curie.webp" alt="">
+                    <div>
+                        <div class="scientist__backdrop">
+                            <p class="scientist__description">Marie Curie <br>1867-1934</p>
+                        </div>
+                        </img>
                     </div>
-                    </img>
-                </div>
             </li>
             <li class="scientist__item">
-                <div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQfSURBVHgB7dpNUhpRFIbh223pQCdkBzAQxImyAnEJ2UGyAmUFyArEFURXkCWIK5CMsHCQ3kGYyIwm51BAKUF++xsY36eK2PxVpYq3Tl8uHYUNdTqd6s7OzslwOKza3dMoinJ2nAv4sOwz7NlnmNih39ppmj6Uy+VW2EC0zosfHx9z+/v7l/YfuCCiTyOxz7s1GAwaFlmy6ptWCsuDOjg4uLKYLgI+LQvsdtXAlob19PR0GcdxnQmFscRuV6VS6W7RixaG1e12m0wpzGPTq1ksFmvvPj/vwfGp7+d4YQ68p93v988rlUpv9ol43qttgX5PVFjBqQ+geU/8E5af/vwNAViBDyBr5nr28TenQtub+mYL9R8BWJN9W6wdHx83J/enYVlUeYvq3g7zAVhfz9Zbhcl6a3oqtF30eiAqbM6/8NUnd0YTazytfgdgSza1vvjUGk2s8bQCtmY7CqN9z1FYbC0gQ5f+T+RXKYwX7UAm0jQ9t6biswBkyH7uOfGw2AxF1qqxra/yAciQTaxTX7znA5CtXMx1VhDIxQEQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQSKOoqgXgGz14uFwSFjIWhKbdgAyZMMq8YnVCkCGbHnVjgeDwa8AZMjOgq3ID7rd7h+bXLkAbC8plUqF0XaDRdUMQAYmS6tRWHt7ezcByICF1fC/o7AKhULPFlxMLWzForotl8uJH0933nd3dxtslmILyWRauWlYPrXSNG0EYDNXk2nl3vxWeHR01OSUiHX5lz/7Jnj3+rFo3gtt++HeXlwNwHJti6oy++DcqxtsvfXVd08DsIBvLfT7/fN5z0WL3miT69refBmAGX76s6VT7b3nF16PVSwWa7ag/26HSQDC6HfAng+bRVG5pRf62Ur/1uI69z2KgE/Np9TLy0vBolq6oR6FNXQ6nbwVW7db1e7mA/574wnVtLXUTaVSWXmfc62wXnt+fj6zSVa1w1O7eXB5fsj+2Dwi+0z9V5i23Vr+9/Dw8CFs4C9ETB3tPd812AAAAABJRU5ErkJggg==" alt="">
-                    <div class="scientist__backdrop">
-                        <p class="scientist__description">Johannes Kepler <br>1571-1630</p>
+                <div class="scientist__item-box" id="5">
+                    <img class="scientist__image" src="../img/johannas-kepler.webp" alt="">
+                    <div>
+                        <div class="scientist__backdrop">
+                            <p class="scientist__description">Johannes Kepler <br>1571-1630</p>
+                        </div>
+                        </img>
                     </div>
-                    </img>
-                </div>
             </li>
             <li class="scientist__item">
-                <div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQfSURBVHgB7dpNUhpRFIbh223pQCdkBzAQxImyAnEJ2UGyAmUFyArEFURXkCWIK5CMsHCQ3kGYyIwm51BAKUF++xsY36eK2PxVpYq3Tl8uHYUNdTqd6s7OzslwOKza3dMoinJ2nAv4sOwz7NlnmNih39ppmj6Uy+VW2EC0zosfHx9z+/v7l/YfuCCiTyOxz7s1GAwaFlmy6ptWCsuDOjg4uLKYLgI+LQvsdtXAlob19PR0GcdxnQmFscRuV6VS6W7RixaG1e12m0wpzGPTq1ksFmvvPj/vwfGp7+d4YQ68p93v988rlUpv9ol43qttgX5PVFjBqQ+geU/8E5af/vwNAViBDyBr5nr28TenQtub+mYL9R8BWJN9W6wdHx83J/enYVlUeYvq3g7zAVhfz9Zbhcl6a3oqtF30eiAqbM6/8NUnd0YTazytfgdgSza1vvjUGk2s8bQCtmY7CqN9z1FYbC0gQ5f+T+RXKYwX7UAm0jQ9t6biswBkyH7uOfGw2AxF1qqxra/yAciQTaxTX7znA5CtXMx1VhDIxQEQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQSKOoqgXgGz14uFwSFjIWhKbdgAyZMMq8YnVCkCGbHnVjgeDwa8AZMjOgq3ID7rd7h+bXLkAbC8plUqF0XaDRdUMQAYmS6tRWHt7ezcByICF1fC/o7AKhULPFlxMLWzForotl8uJH0933nd3dxtslmILyWRauWlYPrXSNG0EYDNXk2nl3vxWeHR01OSUiHX5lz/7Jnj3+rFo3gtt++HeXlwNwHJti6oy++DcqxtsvfXVd08DsIBvLfT7/fN5z0WL3miT69refBmAGX76s6VT7b3nF16PVSwWa7ag/26HSQDC6HfAng+bRVG5pRf62Ur/1uI69z2KgE/Np9TLy0vBolq6oR6FNXQ6nbwVW7db1e7mA/574wnVtLXUTaVSWXmfc62wXnt+fj6zSVa1w1O7eXB5fsj+2Dwi+0z9V5i23Vr+9/Dw8CFs4C9ETB3tPd812AAAAABJRU5ErkJggg==" alt="">
-                    <div class="scientist__backdrop">
-                        <p class="scientist__description">Nicolaus Copernicus <br>1473-1543</p>
+                <div class="scientist__item-box" id="6">
+                    <img class="scientist__image" src="../img/nicolaus-copernicus.jpg" alt="">
+                    <div>
+                        <div class="scientist__backdrop">
+                            <p class="scientist__description">Nicolaus Copernicus <br>1473-1543</p>
+                        </div>
+                        </img>
                     </div>
-                    </img>
-                </div>
             </li>
             <li class="scientist__item">
-                <div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQfSURBVHgB7dpNUhpRFIbh223pQCdkBzAQxImyAnEJ2UGyAmUFyArEFURXkCWIK5CMsHCQ3kGYyIwm51BAKUF++xsY36eK2PxVpYq3Tl8uHYUNdTqd6s7OzslwOKza3dMoinJ2nAv4sOwz7NlnmNih39ppmj6Uy+VW2EC0zosfHx9z+/v7l/YfuCCiTyOxz7s1GAwaFlmy6ptWCsuDOjg4uLKYLgI+LQvsdtXAlob19PR0GcdxnQmFscRuV6VS6W7RixaG1e12m0wpzGPTq1ksFmvvPj/vwfGp7+d4YQ68p93v988rlUpv9ol43qttgX5PVFjBqQ+geU/8E5af/vwNAViBDyBr5nr28TenQtub+mYL9R8BWJN9W6wdHx83J/enYVlUeYvq3g7zAVhfz9Zbhcl6a3oqtF30eiAqbM6/8NUnd0YTazytfgdgSza1vvjUGk2s8bQCtmY7CqN9z1FYbC0gQ5f+T+RXKYwX7UAm0jQ9t6biswBkyH7uOfGw2AxF1qqxra/yAciQTaxTX7znA5CtXMx1VhDIxQEQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQSKOoqgXgGz14uFwSFjIWhKbdgAyZMMq8YnVCkCGbHnVjgeDwa8AZMjOgq3ID7rd7h+bXLkAbC8plUqF0XaDRdUMQAYmS6tRWHt7ezcByICF1fC/o7AKhULPFlxMLWzForotl8uJH0933nd3dxtslmILyWRauWlYPrXSNG0EYDNXk2nl3vxWeHR01OSUiHX5lz/7Jnj3+rFo3gtt++HeXlwNwHJti6oy++DcqxtsvfXVd08DsIBvLfT7/fN5z0WL3miT69refBmAGX76s6VT7b3nF16PVSwWa7ag/26HSQDC6HfAng+bRVG5pRf62Ur/1uI69z2KgE/Np9TLy0vBolq6oR6FNXQ6nbwVW7db1e7mA/574wnVtLXUTaVSWXmfc62wXnt+fj6zSVa1w1O7eXB5fsj+2Dwi+0z9V5i23Vr+9/Dw8CFs4C9ETB3tPd812AAAAABJRU5ErkJggg==" alt="">
-                    <div class="scientist__backdrop">
-                        <p class="scientist__description">Max Planck <br>1858-1947</p>
+                <div class="scientist__item-box" id="7">
+                    <img class="scientist__image" src="../img/max-planck.jpg" alt="">
+                    <div>
+                        <div class="scientist__backdrop">
+                            <p class="scientist__description">Max Planck <br>1858-1947</p>
+                        </div>
+                        </img>
                     </div>
-                    </img>
-                </div>
             </li>
             <li class="scientist__item">
-                <div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQfSURBVHgB7dpNUhpRFIbh223pQCdkBzAQxImyAnEJ2UGyAmUFyArEFURXkCWIK5CMsHCQ3kGYyIwm51BAKUF++xsY36eK2PxVpYq3Tl8uHYUNdTqd6s7OzslwOKza3dMoinJ2nAv4sOwz7NlnmNih39ppmj6Uy+VW2EC0zosfHx9z+/v7l/YfuCCiTyOxz7s1GAwaFlmy6ptWCsuDOjg4uLKYLgI+LQvsdtXAlob19PR0GcdxnQmFscRuV6VS6W7RixaG1e12m0wpzGPTq1ksFmvvPj/vwfGp7+d4YQ68p93v988rlUpv9ol43qttgX5PVFjBqQ+geU/8E5af/vwNAViBDyBr5nr28TenQtub+mYL9R8BWJN9W6wdHx83J/enYVlUeYvq3g7zAVhfz9Zbhcl6a3oqtF30eiAqbM6/8NUnd0YTazytfgdgSza1vvjUGk2s8bQCtmY7CqN9z1FYbC0gQ5f+T+RXKYwX7UAm0jQ9t6biswBkyH7uOfGw2AxF1qqxra/yAciQTaxTX7znA5CtXMx1VhDIxQEQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQSKOoqgXgGz14uFwSFjIWhKbdgAyZMMq8YnVCkCGbHnVjgeDwa8AZMjOgq3ID7rd7h+bXLkAbC8plUqF0XaDRdUMQAYmS6tRWHt7ezcByICF1fC/o7AKhULPFlxMLWzForotl8uJH0933nd3dxtslmILyWRauWlYPrXSNG0EYDNXk2nl3vxWeHR01OSUiHX5lz/7Jnj3+rFo3gtt++HeXlwNwHJti6oy++DcqxtsvfXVd08DsIBvLfT7/fN5z0WL3miT69refBmAGX76s6VT7b3nF16PVSwWa7ag/26HSQDC6HfAng+bRVG5pRf62Ur/1uI69z2KgE/Np9TLy0vBolq6oR6FNXQ6nbwVW7db1e7mA/574wnVtLXUTaVSWXmfc62wXnt+fj6zSVa1w1O7eXB5fsj+2Dwi+0z9V5i23Vr+9/Dw8CFs4C9ETB3tPd812AAAAABJRU5ErkJggg==" alt="">
-                    <div class="scientist__backdrop">
-                        <p class="scientist__description">Katherine Blodgett <br>1898-1979</p>
+                <div class="scientist__item-box" id="8">
+                    <img class="scientist__image" src="../img/katherine-blodgett.jpg" alt="">
+                    <div>
+                        <div class="scientist__backdrop">
+                            <p class="scientist__description">Katherine Blodgett <br>1898-1979</p>
+                        </div>
+                        </img>
                     </div>
-                    </img>
-                </div>
             </li>
             <li class="scientist__item">
-                <div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQfSURBVHgB7dpNUhpRFIbh223pQCdkBzAQxImyAnEJ2UGyAmUFyArEFURXkCWIK5CMsHCQ3kGYyIwm51BAKUF++xsY36eK2PxVpYq3Tl8uHYUNdTqd6s7OzslwOKza3dMoinJ2nAv4sOwz7NlnmNih39ppmj6Uy+VW2EC0zosfHx9z+/v7l/YfuCCiTyOxz7s1GAwaFlmy6ptWCsuDOjg4uLKYLgI+LQvsdtXAlob19PR0GcdxnQmFscRuV6VS6W7RixaG1e12m0wpzGPTq1ksFmvvPj/vwfGp7+d4YQ68p93v988rlUpv9ol43qttgX5PVFjBqQ+geU/8E5af/vwNAViBDyBr5nr28TenQtub+mYL9R8BWJN9W6wdHx83J/enYVlUeYvq3g7zAVhfz9Zbhcl6a3oqtF30eiAqbM6/8NUnd0YTazytfgdgSza1vvjUGk2s8bQCtmY7CqN9z1FYbC0gQ5f+T+RXKYwX7UAm0jQ9t6biswBkyH7uOfGw2AxF1qqxra/yAciQTaxTX7znA5CtXMx1VhDIxQEQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQSKOoqgXgGz14uFwSFjIWhKbdgAyZMMq8YnVCkCGbHnVjgeDwa8AZMjOgq3ID7rd7h+bXLkAbC8plUqF0XaDRdUMQAYmS6tRWHt7ezcByICF1fC/o7AKhULPFlxMLWzForotl8uJH0933nd3dxtslmILyWRauWlYPrXSNG0EYDNXk2nl3vxWeHR01OSUiHX5lz/7Jnj3+rFo3gtt++HeXlwNwHJti6oy++DcqxtsvfXVd08DsIBvLfT7/fN5z0WL3miT69refBmAGX76s6VT7b3nF16PVSwWa7ag/26HSQDC6HfAng+bRVG5pRf62Ur/1uI69z2KgE/Np9TLy0vBolq6oR6FNXQ6nbwVW7db1e7mA/574wnVtLXUTaVSWXmfc62wXnt+fj6zSVa1w1O7eXB5fsj+2Dwi+0z9V5i23Vr+9/Dw8CFs4C9ETB3tPd812AAAAABJRU5ErkJggg==" alt="">
-                    <div class="scientist__backdrop">
-                        <p class="scientist__description">Ada Lovelace <br>1815-1852</p>
+                <div class="scientist__item-box" id="9">
+                    <img class="scientist__image" src="../img/ada-lovelace.png" alt="">
+                    <div>
+                        <div class="scientist__backdrop">
+                            <p class="scientist__description">Ada Lovelace <br>1815-1852</p>
+                        </div>
+                        </img>
                     </div>
-                    </img>
-                </div>
             </li>
             <li class="scientist__item">
-                <div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQfSURBVHgB7dpNUhpRFIbh223pQCdkBzAQxImyAnEJ2UGyAmUFyArEFURXkCWIK5CMsHCQ3kGYyIwm51BAKUF++xsY36eK2PxVpYq3Tl8uHYUNdTqd6s7OzslwOKza3dMoinJ2nAv4sOwz7NlnmNih39ppmj6Uy+VW2EC0zosfHx9z+/v7l/YfuCCiTyOxz7s1GAwaFlmy6ptWCsuDOjg4uLKYLgI+LQvsdtXAlob19PR0GcdxnQmFscRuV6VS6W7RixaG1e12m0wpzGPTq1ksFmvvPj/vwfGp7+d4YQ68p93v988rlUpv9ol43qttgX5PVFjBqQ+geU/8E5af/vwNAViBDyBr5nr28TenQtub+mYL9R8BWJN9W6wdHx83J/enYVlUeYvq3g7zAVhfz9Zbhcl6a3oqtF30eiAqbM6/8NUnd0YTazytfgdgSza1vvjUGk2s8bQCtmY7CqN9z1FYbC0gQ5f+T+RXKYwX7UAm0jQ9t6biswBkyH7uOfGw2AxF1qqxra/yAciQTaxTX7znA5CtXMx1VhDIxQEQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQSKOoqgXgGz14uFwSFjIWhKbdgAyZMMq8YnVCkCGbHnVjgeDwa8AZMjOgq3ID7rd7h+bXLkAbC8plUqF0XaDRdUMQAYmS6tRWHt7ezcByICF1fC/o7AKhULPFlxMLWzForotl8uJH0933nd3dxtslmILyWRauWlYPrXSNG0EYDNXk2nl3vxWeHR01OSUiHX5lz/7Jnj3+rFo3gtt++HeXlwNwHJti6oy++DcqxtsvfXVd08DsIBvLfT7/fN5z0WL3miT69refBmAGX76s6VT7b3nF16PVSwWa7ag/26HSQDC6HfAng+bRVG5pRf62Ur/1uI69z2KgE/Np9TLy0vBolq6oR6FNXQ6nbwVW7db1e7mA/574wnVtLXUTaVSWXmfc62wXnt+fj6zSVa1w1O7eXB5fsj+2Dwi+0z9V5i23Vr+9/Dw8CFs4C9ETB3tPd812AAAAABJRU5ErkJggg==" alt="">
-                    <div class="scientist__backdrop">
-                        <p class="scientist__description">Sarah E. Goode <br>1855-1905</p>
+                <div class="scientist__item-box" id="10">
+                    <img class="scientist__image" src="../img/sarah-e-goode.jpg" alt="">
+                    <div>
+                        <div class="scientist__backdrop">
+                            <p class="scientist__description">Sarah E. Goode <br>1855-1905</p>
+                        </div>
+                        </img>
                     </div>
-                    </img>
-                </div>
             </li>
             <li class="scientist__item">
-                <div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQfSURBVHgB7dpNUhpRFIbh223pQCdkBzAQxImyAnEJ2UGyAmUFyArEFURXkCWIK5CMsHCQ3kGYyIwm51BAKUF++xsY36eK2PxVpYq3Tl8uHYUNdTqd6s7OzslwOKza3dMoinJ2nAv4sOwz7NlnmNih39ppmj6Uy+VW2EC0zosfHx9z+/v7l/YfuCCiTyOxz7s1GAwaFlmy6ptWCsuDOjg4uLKYLgI+LQvsdtXAlob19PR0GcdxnQmFscRuV6VS6W7RixaG1e12m0wpzGPTq1ksFmvvPj/vwfGp7+d4YQ68p93v988rlUpv9ol43qttgX5PVFjBqQ+geU/8E5af/vwNAViBDyBr5nr28TenQtub+mYL9R8BWJN9W6wdHx83J/enYVlUeYvq3g7zAVhfz9Zbhcl6a3oqtF30eiAqbM6/8NUnd0YTazytfgdgSza1vvjUGk2s8bQCtmY7CqN9z1FYbC0gQ5f+T+RXKYwX7UAm0jQ9t6biswBkyH7uOfGw2AxF1qqxra/yAciQTaxTX7znA5CtXMx1VhDIxQEQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQSKOoqgXgGz14uFwSFjIWhKbdgAyZMMq8YnVCkCGbHnVjgeDwa8AZMjOgq3ID7rd7h+bXLkAbC8plUqF0XaDRdUMQAYmS6tRWHt7ezcByICF1fC/o7AKhULPFlxMLWzForotl8uJH0933nd3dxtslmILyWRauWlYPrXSNG0EYDNXk2nl3vxWeHR01OSUiHX5lz/7Jnj3+rFo3gtt++HeXlwNwHJti6oy++DcqxtsvfXVd08DsIBvLfT7/fN5z0WL3miT69refBmAGX76s6VT7b3nF16PVSwWa7ag/26HSQDC6HfAng+bRVG5pRf62Ur/1uI69z2KgE/Np9TLy0vBolq6oR6FNXQ6nbwVW7db1e7mA/574wnVtLXUTaVSWXmfc62wXnt+fj6zSVa1w1O7eXB5fsj+2Dwi+0z9V5i23Vr+9/Dw8CFs4C9ETB3tPd812AAAAABJRU5ErkJggg==" alt="">
-                    <div class="scientist__backdrop">
-                        <p class="scientist__description">Lise Meitner <br>1878-1968</p>
+                <div class="scientist__item-box" id="11">
+                    <img class="scientist__image" src="../img/lise-meitner.jpg" alt="">
+                    <div>
+                        <div class="scientist__backdrop">
+                            <p class="scientist__description">Lise Meitner <br>1878-1968</p>
+                        </div>
+                        </img>
                     </div>
-                    </img>
-                </div>
             </li>
-            <li>
-                <div>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQfSURBVHgB7dpNUhpRFIbh223pQCdkBzAQxImyAnEJ2UGyAmUFyArEFURXkCWIK5CMsHCQ3kGYyIwm51BAKUF++xsY36eK2PxVpYq3Tl8uHYUNdTqd6s7OzslwOKza3dMoinJ2nAv4sOwz7NlnmNih39ppmj6Uy+VW2EC0zosfHx9z+/v7l/YfuCCiTyOxz7s1GAwaFlmy6ptWCsuDOjg4uLKYLgI+LQvsdtXAlob19PR0GcdxnQmFscRuV6VS6W7RixaG1e12m0wpzGPTq1ksFmvvPj/vwfGp7+d4YQ68p93v988rlUpv9ol43qttgX5PVFjBqQ+geU/8E5af/vwNAViBDyBr5nr28TenQtub+mYL9R8BWJN9W6wdHx83J/enYVlUeYvq3g7zAVhfz9Zbhcl6a3oqtF30eiAqbM6/8NUnd0YTazytfgdgSza1vvjUGk2s8bQCtmY7CqN9z1FYbC0gQ5f+T+RXKYwX7UAm0jQ9t6biswBkyH7uOfGw2AxF1qqxra/yAciQTaxTX7znA5CtXMx1VhDIxQEQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQSKOoqgXgGz14uFwSFjIWhKbdgAyZMMq8YnVCkCGbHnVjgeDwa8AZMjOgq3ID7rd7h+bXLkAbC8plUqF0XaDRdUMQAYmS6tRWHt7ezcByICF1fC/o7AKhULPFlxMLWzForotl8uJH0933nd3dxtslmILyWRauWlYPrXSNG0EYDNXk2nl3vxWeHR01OSUiHX5lz/7Jnj3+rFo3gtt++HeXlwNwHJti6oy++DcqxtsvfXVd08DsIBvLfT7/fN5z0WL3miT69refBmAGX76s6VT7b3nF16PVSwWa7ag/26HSQDC6HfAng+bRVG5pRf62Ur/1uI69z2KgE/Np9TLy0vBolq6oR6FNXQ6nbwVW7db1e7mA/574wnVtLXUTaVSWXmfc62wXnt+fj6zSVa1w1O7eXB5fsj+2Dwi+0z9V5i23Vr+9/Dw8CFs4C9ETB3tPd812AAAAABJRU5ErkJggg==" alt="">
-                    <div class="scientist__backdrop">
-                        <p class="scientist__description">Hanna Hammarström <br>1829-1909</p>
+            <li class="scientist__item">
+                <div class="scientist__item-box" id="12">
+                    <img class="scientist__image" src="../img/hanna-hammastrom.jpg" alt="">
+                    <div>
+                        <div class="scientist__backdrop">
+                            <p class="scientist__description">Hanna Hammarström <br>1829-1909</p>
+                        </div>
+                        </img>
                     </div>
-                    </img>
-                </div>
             </li>
         </ul>
         <div class="scientist__button-box">
@@ -462,19 +475,20 @@
                 <li class="scientist__button-item">
                     <button class="scientist__button">Знайти вченого, який народився найпізніше</button>
                 </li>
-                </ul>
-                <ul class="scientist__button-list2">
+            </ul>
+            <ul class="scientist__button-list2">
                 <li class="scientist__button-item">
                     <button class="scientist__button">Знайти рік народження Albert Einshtein</button>
                 </li>
                 <li class="scientist__button-item">
-                    <button class="scientist__button">Знайти вчених, прізвища яких починаються на на літеру “С” </button>
+                    <button class="scientist__button">Знайти вчених, прізвища яких починаються на на літеру “С”
+                    </button>
                 </li>
                 <li class="scientist__button-item">
-                    <button class="scientist__button">Видалити всіх вчених, ім’я яких починається на “А”</button>
+                    <button class="scientist__button">Виділити всіх вчених, ім’я яких починається на “А”</button>
                 </li>
                 <li class="scientist__button-item">
-                    <button class="scientist__button">Знайти вченого, який прожив найдовше і вченого, 
+                    <button class="scientist__button">Знайти вченого, який прожив найдовше і вченого,
                         який прожив найменше</button>
                 </li>
             </ul>
