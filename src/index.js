@@ -10,6 +10,6 @@ import "./js/leap-year.js"
 import "./js/rock-scissors-paper.js"
 import "./js/guess-number.js"
 import "./js/dark-mode.js"
-import "./js/choose-scientist.js
-import "./js/footer.js"
+import "./js/choose-scientist.js"
+import "./js/football.js"\
 
