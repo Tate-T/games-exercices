@@ -1,7 +1,9 @@
 .footer {
+  background-color: #fff;
     &__container {
         display: flex;
         align-items: center;
+        justify-content: center;
         background-color: #fff;
 
         @media screen and (max-width: 768px) {
