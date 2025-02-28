@@ -71,6 +71,15 @@
     
   }
 
+  &__input::placeholder{
+    color: #7E7E7E;
+    font-family: "Montserrat Alternates";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
   &__button {
     margin-left: 180px;
     margin-top: -35px;
