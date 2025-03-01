@@ -28,7 +28,7 @@
     </style>
     <title>Coding Magic</title>
     <script type="module" crossorigin src="/games-exercices/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/games-exercices/assets/index-0a90f16c.css">
+    <link rel="stylesheet" href="/games-exercices/assets/index-c996eaf6.css">
   </head>
   <body>
     <section class="container">
@@ -168,27 +168,23 @@
         </div>
     </div>
 </section>
-    <section class="randnumb" id='number'>
-    <div class="container randnumb__element">
-        <h1 class="randnumb__title">Вгадай число, яке загадав комп'ютер</h1>
-        <div class="randnumb__input-wrapper">
-            <input type="number" id="guess" class="randnumb__input" placeholder="Введіть число" min="0" max="9">
-            <button class="randnumb__button" onclick="checkGuess()">
-                <span class="randnumb__icon">
-                    <svg width="24" height="24" class="randnumb__icons" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g class="randnumb__eco" filter="url(#filter0_dd_27_33)">
-                            <circle cx="10.5217" cy="6.52174" r="5.52174" stroke="white" stroke-width="2" fill="transparent"/>
-                            <path
-                                d="M18.2929  16.0976 19.3166 16.0976 19.7071 15.7071C20.0976 15.3166 20.0976 14.6834 19.7071 14.2929L18.2929 15.7071ZM15.468 10.0538L14.7609 9.34665L13.3467 10.7609L14.0538 11.468L15.468 10.0538ZM19.7071 14.2929L15.468 10.0538L14.0538 11.468L18.2929 15.7071L19.7071 14.2929Z"
-                                fill="white" />
-                        </g>
-                    </svg>
-                </span>
+    <section class="randnumb" id='numerical'>
+<div class="randnumb__line"></div>
+    <div class="leap-year__box">
+      <h2 class="randnumb__title">Вгадай число, яке загадав комп'ютер</h2>
+        <form class="leap-year__form">
+          <div class="leap-year__content">
+            <input type="text" class="leap-year__input" placeholder="Введіть число" id="numbInput">
+            <button type="button" id="numbButton" class="leap-year__button">
+              <svg class="leap-year__img" width="15" height="15">
+                <use href="/games-exercices/assets/symbol.defs-72bec75c.svg#icon-search"></use>
+              </svg>
             </button>
-        <p id="message" class="randnumb__message">
-        </p>
-        </div>
-    <div class="randnumb__line"></div>
+            <div class="leap-year__box-item">
+              <p id="numb-result" class="leap-year__result"></p>
+            </div>
+          </div>
+        </form>
     </div>
 </section>
     <section id="playing" class="rsp">
@@ -215,6 +211,7 @@
 </section>
     <section class="calculator" id="number">
     <div class="container">
+        <div class="randnumb__lie"></div>
         <h2 class="calculator__title">Калькулятор</h2>
         <ul class="calculator__list">
             <li>
@@ -235,13 +232,12 @@
                 <input type="number" class="calculator__input-2" placeholder="Введіть число">
             </li>
             <li>
-                <button class="calculator__dorivnue">=</button>
+                <button class="calculator__button calculator__dorivnue">=</button>
             </li>
             <li>
-                <input class="calculator__input-3" type="number" placeholder="Відповідь">
+                <input class="calculator__input-3" type="number" placeholder="Результат">
             </li>
         </ul>
-        <div class="calculator__line"></div>
     </div>
 </section>
     <section id="numerical" class="time-calculator">
