@@ -13,8 +13,8 @@
     width: 768px;
   }
 }
-@media screen and (min-width: 1090px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 1090px;
+    width: 1200px;
   }
 }/*# sourceMappingURL=container.css.map */
