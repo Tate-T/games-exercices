@@ -24,11 +24,17 @@
     &__navigation-button:first-child {
         margin-right: 328px;
         background-color: transparent;
+        @media screen and (min-width: 480px) {
+            margin-right: 50px;
+        }
     }
 
     &__navigation-button:last-child {
         margin-left: 328px;
         background-color: transparent;
+        @media screen and (min-width: 480px) {
+            margin-left: 50px;
+        }
     }
 
     &__slider-info {
