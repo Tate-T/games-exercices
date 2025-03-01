@@ -6,7 +6,8 @@ function isLeapYear(year) {
     return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
 }
 
-checkButton.addEventListener("click", () => {
+checkButton.addEventListener("click", (event) => {
+    event.preventDefault()
     const year = parseInt(yearInput.value, 10);
 
 if (Number(year) && year > 0) {

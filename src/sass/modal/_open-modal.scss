@@ -7,6 +7,11 @@
     background-repeat: no-repeat;
     background-size: 500px;
     background-position: 40px 170px;
+    @media screen and (max-width: 767px) {
+        width: 480px;
+        background-position: 27px 170px;
+        background-size: 430px;
+    }
 
     &__close-box {
         display: flex;
