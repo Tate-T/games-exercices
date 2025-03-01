@@ -22,6 +22,10 @@
         align-items: center;
         justify-content: center;
         margin-left: 180px;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            margin-left: 0px;
+        }
     }
 
     &__title {
@@ -61,6 +65,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 170%;
+        
     }
 
     &__text {
@@ -90,6 +95,10 @@
 
     &__results-box {
         margin-left: 104px;
+        @media screen and (max-width: 768px) {
+            margin-left: 0px;
+            margin-bottom: 20px;
+        }
     }
 
     &__info-box {

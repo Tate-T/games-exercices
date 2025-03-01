@@ -8,6 +8,26 @@
         background-color: #fff;
     }
 
+
+    &__lie {
+        width: 720px;
+        height: 1px;
+        background-color: #000;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    &__line {
+        width: 776px;
+        height: 1px;
+        margin-left: auto;
+        background-color: #000;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        right: 240px;
+        position: absolute;
+    }
+
     &__input-wrapper {
         display: flex;
         flex-direction: row;
@@ -29,6 +49,8 @@
         color: #000;
         font-family: 'Montserrat Alternates';
         font-size: 18px;
+        margin-top: 53px;
+        margin-left: 50px;
         font-weight: 400;
     }
 
@@ -83,6 +105,8 @@
     &__message {
         font-size: 18px;
         margin-top: 10px;
+        display: block;
+        visibility: visible;
     }
 
     &__message-box {

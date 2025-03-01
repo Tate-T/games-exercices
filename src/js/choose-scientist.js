@@ -32,18 +32,6 @@ scientistButton[0].addEventListener('click', () => {
 });
 
 scientistButton[1].addEventListener('click', () => {
-    scientistImage[1].style.opacity = 1;
-    scientistImage[2].style.opacity = 1;
-    scientistImage[4].style.opacity = 1;
-    scientistImage[5].style.opacity = 1;
-    scientistImage[0].style.opacity = 1;
-    scientistImage[3].style.opacity = 1;
-    scientistImage[6].style.opacity = 1;
-    scientistImage[7].style.opacity = 1;
-    scientistImage[8].style.opacity = 1;
-    scientistImage[9].style.opacity = 1;
-    scientistImage[10].style.opacity = 1;
-    scientistImage[11].style.opacity = 1;
     scientistDesc[1].style.opacity = 1;
     scientistDesc[2].style.opacity = 1;
     scientistDesc[4].style.opacity = 1;
@@ -56,8 +44,82 @@ scientistButton[1].addEventListener('click', () => {
     scientistDesc[9].style.opacity = 1;
     scientistDesc[10].style.opacity = 1;
     scientistDesc[11].style.opacity = 1;
-    scientistItem[0] = scientistItem[1]
+    scientistImage[1].style.opacity = 1;
+    scientistImage[2].style.opacity = 1;
+    scientistImage[4].style.opacity = 1;
+    scientistImage[5].style.opacity = 1;
+    scientistImage[0].style.opacity = 1;
+    scientistImage[3].style.opacity = 1;
+    scientistImage[6].style.opacity = 1;
+    scientistImage[7].style.opacity = 1;
+    scientistImage[8].style.opacity = 1;
+    scientistImage[9].style.opacity = 1;
+    scientistImage[10].style.opacity = 1;
+    scientistImage[11].style.opacity = 1;
+    const oldScientist = [...scientistItem]
+    const newScientist = []
+    newScientist[0] = oldScientist[0]
+    newScientist[1] = oldScientist[8]
+    newScientist[2] = oldScientist[2]
+    newScientist[3] = oldScientist[11]
+    newScientist[4] = oldScientist[1]
+    newScientist[5] = oldScientist[4]
+    newScientist[6] = oldScientist[7]
+    newScientist[7] = oldScientist[10]
+    newScientist[8] = oldScientist[3]
+    newScientist[9] = oldScientist[6]
+    newScientist[10] = oldScientist[5]
+    newScientist[11] = oldScientist[9]
+    scientistItems.forEach((el, indx) => {
+        el.append(newScientist[indx])
+    })
 });
+
+scientistButton[2].addEventListener('click', () => {
+    scientistDesc[1].style.opacity = 1;
+    scientistDesc[2].style.opacity = 1;
+    scientistDesc[4].style.opacity = 1;
+    scientistDesc[5].style.opacity = 1;
+    scientistDesc[0].style.opacity = 1;
+    scientistDesc[3].style.opacity = 1;
+    scientistDesc[6].style.opacity = 1;
+    scientistDesc[7].style.opacity = 1;
+    scientistDesc[8].style.opacity = 1;
+    scientistDesc[9].style.opacity = 1;
+    scientistDesc[10].style.opacity = 1;
+    scientistDesc[11].style.opacity = 1;
+    scientistImage[1].style.opacity = 1;
+    scientistImage[2].style.opacity = 1;
+    scientistImage[4].style.opacity = 1;
+    scientistImage[5].style.opacity = 1;
+    scientistImage[0].style.opacity = 1;
+    scientistImage[3].style.opacity = 1;
+    scientistImage[6].style.opacity = 1;
+    scientistImage[7].style.opacity = 1;
+    scientistImage[8].style.opacity = 1;
+    scientistImage[9].style.opacity = 1;
+    scientistImage[10].style.opacity = 1;
+    scientistImage[11].style.opacity = 1;
+    const oldScientist = [...scientistItem]
+    const newScientist = []
+    newScientist[0] = oldScientist[10]
+    newScientist[11] = oldScientist[8]
+    newScientist[2] = oldScientist[2]
+    newScientist[8] = oldScientist[3]
+    newScientist[4] = oldScientist[1]
+    newScientist[9] = oldScientist[4]
+    newScientist[3] = oldScientist[7]
+    newScientist[7] = oldScientist[5]
+    newScientist[5] = oldScientist[11]
+    newScientist[1] = oldScientist[6]
+    newScientist[6] = oldScientist[0]
+    newScientist[10] = oldScientist[9]
+    scientistItems.forEach((el, indx) => {
+        el.append(newScientist[indx])
+    })
+});
+
+
 
 scientistButton[3].addEventListener('click', () => {
     scientistImage[1].style.opacity = 0;

@@ -27,13 +27,14 @@
     font-family: 'Montserrat Alternates';
     font-size: 18px;
     font-weight: 400;
+    padding-left: 300px;
   }
 
   &__list {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 35px;
     margin-bottom: 20px;
   }
 
@@ -41,65 +42,63 @@
   &__input-2,
   &__input-3 {
     font-family: "Montserrat";
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 135px;
+    height: 35px;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+    background: #d7d7d7;
     font-weight: 400;
     font-size: 12px;
     color: #7e7e7e;
-    padding: 10px;
-    width: 170px;
-    height: 32px;
-    border-radius: 40px;
-    text-align: center;
   }
 
   &__elem {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     justify-content: center;
   }
 
   &__row {
     display: flex;
-    gap: 5px;
+    gap: 10px;
   }
 
   &__button {
-    background-color: #000;
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    cursor: pointer;
-    border: none;
-    transition: background 0.3s;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+    background: #000;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
   }
 
   &__button:hover {
     background-color: #333;
   }
 
-  &__dorivnue {
-    background-color: #000;
-    color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  &__button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: #000 solid 2px;
   }
 
   &__line {
-    width: 100%;
+    width: 736px;
     height: 1px;
     background-color: #000;
+    margin-right: auto;
+    margin-bottom: 30px;
   }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
