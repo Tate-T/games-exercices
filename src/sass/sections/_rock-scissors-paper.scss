@@ -15,7 +15,7 @@
         align-items: center;
         justify-content: center;
         margin-left: 180px;
-        @media screen and (min-width: 480px) {
+        @media screen and (max-width: 768px) {
             flex-direction: column;
             margin-left: 0px;
         }
@@ -88,8 +88,9 @@
 
     &__results-box {
         margin-left: 104px;
-        @media screen and (min-width: 480px) {
+        @media screen and (max-width: 768px) {
             margin-left: 0px;
+            margin-bottom: 20px;
         }
     }
 
