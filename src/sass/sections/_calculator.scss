@@ -1,14 +1,27 @@
 .calculator {
-  background-color: #fff;
-  width: 730px;
-  height: 220px;
-  padding-top: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    background-color: #fff;
+    padding-bottom: 36px;
+  }
+
+  &__line {
+    width: 736px;
+    height: 1px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    background-color: #000;
+    border: none;
+    margin-bottom: 36px;
+  }
 
   &__title {
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
     padding-bottom: 20px;
     color: #000;
     font-family: 'Montserrat Alternates';
@@ -19,6 +32,7 @@
   &__list {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
   }

@@ -1,7 +1,7 @@
 .google-dinosaur {
-  background-color: #fff;
 
   &__line {
+    margin-top: 0;
     width: 736px;
     height: 1px;
     flex-shrink: 0;
@@ -9,6 +9,11 @@
     background-color: #000;
     border: none;
     margin-bottom: 36px;
+  }
+
+  &__container{
+    padding-bottom: 34px;
+    background-color: #fff;
   }
 }
 

@@ -1,21 +1,30 @@
 .randnumb {
-    background-color: #fff;
-    width: 596px;
-    height: 132px;
-    padding-top: 32px;
-    margin-left: auto;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-right: auto;
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        padding-bottom: 36px;
+        background-color: #fff;
+    }
 
     &__input-wrapper {
         display: flex;
-        padding: 31px;
+        flex-direction: row;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+        padding-right: 200px;
+        margin-right: 60px;
     }
 
     &__title {
-        padding-left: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding-bottom: 31px;
         color: #000;
         font-family: 'Montserrat Alternates';
@@ -24,10 +33,13 @@
     }
 
     &__line {
-        width: 730px;
-        height: 0.5px;
-        margin-left: -95px;
+        width: 736px;
+        height: 1px;
+        flex-shrink: 0;
+        stroke-width: 1px;
         background-color: #000;
+        border: none;
+        margin-bottom: 36px;
     }
 
     &__icons {
@@ -71,6 +83,11 @@
     &__message {
         font-size: 18px;
         margin-top: 10px;
+    }
+
+    &__message-box {
+        margin-top: 30px;
+        padding-left: 149px;
     }
 }
 
