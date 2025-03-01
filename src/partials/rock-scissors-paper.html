@@ -4,19 +4,19 @@
         <h2 class="rsp__title">Камінь - ножиці - папір</h2>
         <div class="rsp__all-box">
             <div class="rsp__choice">
-                <img class="rsp__choice-img" src="./img/rock.png" alt="Rock">
-                <img class="rsp__choice-img" src="./img/scissors.png" alt="scissors">
-                <img class="rsp__choice-img" src="./img/paper.png" alt="Paper">
+                <img class="rsp__choice-img" id="rock" src="./img/rock.png" alt="Rock">
+                <img class="rsp__choice-img" id="scissors" src="./img/scissors.png" alt="scissors">
+                <img class="rsp__choice-img" id="paper" src="./img/paper.png" alt="Paper">
             </div>
                 <div class="rsp__results-box">
                     <p class="rsp__results-desc">
-                        Рахунок:<br/>Комп'ютер - <span>0</span><br />Ви - <span></span>
+                        Рахунок:<br/>Комп'ютер - <span id="comp-score">0</span><br />Ви - <span id="person-score"></span>
                     </p>
                 </div>
                 </div>
                 <div class="rsp__info-box">
-            <p class="rsp__text">Ви виграли раунд!</p>
-            <button class="rsp__computer-button">Варіант комп’ютера</button>
+            <p id="rsp-result" class="rsp__text"></p>
+            <button id="check-result" class="rsp__computer-button">Варіант комп’ютера</button>
         </div>
         </div>
 </section>
