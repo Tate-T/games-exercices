@@ -3,26 +3,23 @@
   justify-content: center;
   align-items: center;
 
-
-
-    &__container {
-      background-color: #fff;
-      padding-bottom: 36px;
-    }
+  &__container {
+    background-color: #fff;
+    padding-bottom: 36px;
+  }
   &__title {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
     color: #000;
-    font-family: 'Montserrat Alternates';
+    font-family: "Montserrat Alternates";
     font-size: 18px;
     font-weight: 400;
     margin-left: -220px;
-    @media screen and (min-width:768px) {
-        margin-left: 15px;
-      }
-
+    @media screen and (min-width: 768px) {
+      margin-left: 15px;
+    }
   }
 
   &__list {
@@ -83,26 +80,6 @@
     color: rgb(0, 0, 0);
     border: #000 solid 2px;
   }
-
-  &__line {
-    margin-top: 0;
-    width: 320px;
-    height: 1px;
-    flex-shrink: 0;
-    stroke-width: 1px;
-    background-color: #000;
-    border: none;
-    margin-bottom: 36px;
-
-    @media screen and (min-width: 768px) {
-      width: 600px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: 736px;
-    }
-}
-}
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {

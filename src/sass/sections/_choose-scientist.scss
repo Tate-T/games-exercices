@@ -1,133 +1,103 @@
 .scientist {
+  &__container {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    &__container {
-        background-color: #fff;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
+  &__box {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 59px;
+    margin-top: 36px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
     }
+  }
 
-    &__line {
-        margin-top: 0;
-        width: 320px;
-        height: 1px;
-        flex-shrink: 0;
-        stroke-width: 1px;
-        background-color: #000;
-        border: none;
-        margin-bottom: 36px;
-    
-        @media screen and (min-width: 768px) {
-          width: 600px;
-        }
-    
-        @media screen and (min-width: 1200px) {
-          width: 736px;
-        }
-    }
+  &__button {
+    border-radius: 20px;
+    background: #000;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    display: inline-flex;
+    padding: 10px 20px;
+    align-items: flex-start;
+    color: #fff;
+    text-align: right;
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 
-    &__title {
-        color: #000;
-        font-family: "Montserrat";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        text-align: center;
-    }
+  &__item-box {
+    position: relative;
+  }
 
-    &__box {
-        width: 600px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 59px;
-        margin-top: 36px;
-        @media screen and (max-width: 768px) {
-            width: 100%;
-        }
-    }
+  &__image {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #d9d9d9;
+  }
 
-    &__button {
-        border-radius: 20px;
-        background: #000;
-        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-        display: inline-flex;
-        padding: 10px 20px;
-        align-items: flex-start;
-        color: #FFF;
-        text-align: right;
-        font-family: "Montserrat";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
+  &__backdrop {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00000063;
+    border-radius: 20%;
+  }
 
-    &__item-box {
-        position: relative;
-    }
+  &__description {
+    text-align: center;
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 
-    &__image {
-        width: 100px;
-        height: 100px;
-        flex-shrink: 0;
-        border-radius: 20px;
-        background: #D9D9D9;
-    }
+  &__button-box {
+    align-items: start;
+    display: flex;
+    gap: 36px;
+    margin-top: 36px;
+  }
 
-    &__backdrop {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: #00000063;
-        border-radius: 20%;
+  &__button-list {
+    width: 441px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
     }
+  }
 
-    &__description {
-        text-align: center;
-        color: #FFF;
-        font-family: "Montserrat";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+  &__button-list2 {
+    width: 441px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
     }
-
-    &__button-box {
-        align-items: start;
-        display: flex;
-        gap: 36px;
-        margin-top: 36px;
-    }
-
-    &__button-list {
-        width: 441px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: end;
-        gap: 20px;
-        @media screen and (max-width: 768px) {
-            width: 100%;
-        }
-    }
-
-    &__button-list2 {
-        width: 441px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        gap: 20px;
-        @media screen and (max-width: 768px) {
-            width: 100%;
-        }
-    }
+  }
 }

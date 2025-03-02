@@ -1,24 +1,5 @@
 .google-dinosaur {
 
-  &__line {
-    margin-top: 0;
-    width: 320px;
-    height: 1px;
-    flex-shrink: 0;
-    stroke-width: 1px;
-    background-color: #000;
-    border: none;
-    margin-bottom: 36px;
-
-    @media screen and (min-width: 768px) {
-      width: 600px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: 736px;
-    }
-}
-
   &__container{
     padding-bottom: 34px;
     background-color: #fff;
