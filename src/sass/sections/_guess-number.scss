@@ -9,24 +9,15 @@
     }
 
 
-    &__lie {
-        width: 720px;
-        height: 1px;
-        background-color: #000;
-        margin-right: auto;
-        margin-bottom: 30px;
-    }
-
     &__line {
-        width: 776px;
+        width: 736px;
         height: 1px;
-        margin-left: auto;
+        flex-shrink: 0;
+        stroke-width: 1px;
         background-color: #000;
-        margin-bottom: 30px;
-        padding-left: 20px;
-        right: 240px;
-        position: absolute;
-    }
+        border: none;
+        margin-bottom: 36px;
+      }
 
     &__input-wrapper {
         display: flex;
