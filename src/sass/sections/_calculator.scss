@@ -1,19 +1,33 @@
 .calculator {
   background-color: #fff;
-  width: 730px;
-  height: 220px;
+  width: 360px;
   padding-top: 32px;
+  border-top: #000 solid 1px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 32px;
   margin-bottom: 50px;
 
+    @media screen and (min-width:768px) {
+      width: 736px;
+      margin-left: 280px;
+    }
+@media screen and (min-width:1200px) {
+  width: 736px;
+}
   &__title {
     padding-bottom: 20px;
     color: #000;
     font-family: 'Montserrat Alternates';
     font-size: 18px;
     font-weight: 400;
-    padding-left: 300px;
+    margin-left: -220px;
+    @media screen and (min-width:768px) {
+        margin-left: 30px;
+      }
+    @media screen and (min-width:1200px) {
+    margin-left: 300px;
+    }
   }
 
   &__list {
@@ -21,6 +35,11 @@
     align-items: center;
     gap: 35px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    max-width: 360px;
+        @media screen and (min-width:768px) {
+            width: 736px;
+          }
   }
 
   &__input-1,
