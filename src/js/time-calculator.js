@@ -16,7 +16,7 @@ timeForm.addEventListener("submit", (event) => {
     const formattedTime = `${days} дн. ${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
     timeOutput.textContent = formattedTime;
   } else {
-    alert("Будь ласка, введіть ккоректне число");
+    timeOutput.textContent = "Введіть число.";
   }
 
   timeInput.value = "";
