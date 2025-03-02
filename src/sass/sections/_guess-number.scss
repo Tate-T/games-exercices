@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 32px;
 
 
 
@@ -15,25 +14,35 @@
       &__form {
         display: flex;
         justify-content: center;
-        padding-bottom: 30px;
         padding-right: 200px;
         margin-right: 60px;
     }
 
 
     &__line {
-        width: 736px;
+        margin-top: 0;
+        width: 320px;
         height: 1px;
         flex-shrink: 0;
         stroke-width: 1px;
         background-color: #000;
         border: none;
         margin-bottom: 36px;
+    
+        @media screen and (min-width: 768px) {
+          width: 600px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+          width: 736px;
+        }
     }
 
     &__input-wrapper {
         display: flex;
-        padding: 31px;
+        padding-top: 31px;
+        padding-left: 31px;
+        padding-right: 31px;
     }
 
     &__title {
