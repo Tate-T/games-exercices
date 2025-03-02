@@ -1,6 +1,6 @@
-const numberInput = document.getElementById("numbInput");
-const checkButton = document.getElementById("numbButton");
-const resultDisplay = document.getElementById("numb-result");
+const numberInput = document.getElementById("guess");
+const checkButton = document.querySelector(".randnumb__button");
+const resultDisplay = document.querySelector(".randnumb__message");
 
 function getRandomNumber() {
     return Math.floor(Math.random() * 8) + 2;
@@ -8,9 +8,9 @@ function getRandomNumber() {
 
 let randomNumber = getRandomNumber(); 
 
-checkButton.addEventListener("click", () => {
+checkButton.addEventListener("click", (event) => {
+    event.preventDefault()
     const userGuess = parseInt(numberInput.value, 10);
-
     if (Number(userGuess) && userGuess >= 2 && userGuess <= 9) {
         if (userGuess === randomNumber) {
             resultDisplay.textContent = `Вітаю, ви вгадали число! (${randomNumber})`;
