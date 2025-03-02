@@ -2,12 +2,26 @@
 
   &__container{
     padding-bottom: 34px;
-    background-color: #fff;
   }
 }
 
 #game-dino{
-    width: 720px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 320px) {
+      width: 300px;
+    }
+  
+    @media screen and (min-width: 480px) {
+      width: 300px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 600px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 720px;
+    }
 }

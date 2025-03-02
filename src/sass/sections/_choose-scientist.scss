@@ -1,10 +1,10 @@
 .scientist {
   &__container {
-    background-color: #fff;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 36px;
   }
 
   &__box {

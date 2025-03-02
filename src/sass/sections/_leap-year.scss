@@ -1,40 +1,45 @@
 .leap-year {
-
   &__container {
-    background-color: #fff;
     padding-bottom: 36px;
   }
 
-  &__title-box {
+  &__title {
     color: #000;
-    font-size: 16px;
     line-height: 1;
     text-align: center;
-    font-family: Montserrat Alternates;
     padding-top: 15px;
     padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+
+    @media screen and (min-width: 320px) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 480px) {
+      font-size: 17px;
+    }
 
     @media screen and (min-width: 768px) {
-      font-size: 20px;
-      font-weight: 400;
+      font-size: 17px;
       padding-top: 30px;
       padding-bottom: 36px;
     }
 
-    @media screen and (min-width: 1090px) {
+    @media screen and (min-width: 1200px) {
       font-size: 24px;
     }
   }
   &__text {
     text-align: center;
     color: #000;
-    font-family: "Montserrat Alternates";
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 36px;
   }
 
-  &__text.dark-mode{
+  &__text.dark-mode {
     color: #fff;
   }
   &__form {
@@ -45,7 +50,6 @@
     @media screen and (min-width: 768px) {
       padding-right: 200px;
     }
-
 
     @media screen and (min-width: 1200px) {
       margin-right: 60px;
@@ -62,14 +66,24 @@
     background: #d7d7d7;
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
     border: none;
-
-    
   }
 
-  &__input::placeholder{
-    color: #7E7E7E;
-    font-family: "Montserrat Alternates";
-    font-size: 12px;
+  &__input {
+    width: 220px;
+    height: 36px;
+    display: inline-flex;
+    padding: 10px 20px 10px 10px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    background: #d7d7d7;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+  }
+
+  &__input::placeholder {
+    color: #7e7e7e;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -84,34 +98,28 @@
     width: 40px;
     border-radius: 0px 20px 20px 0px;
 
-
     @media screen and (min-width: 768px) {
       margin-top: 0;
       margin-left: -40px;
     }
-
   }
 
   &__content {
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
       flex-direction: row;
     }
-
-  
   }
 
-  &__box-item{
+  &__box-item {
     margin-top: 30px;
     padding-left: 25px;
 
-    @media screen and (min-width: 768px){
-    padding-left: 149px;
+    @media screen and (min-width: 768px) {
+      padding-left: 149px;
     }
-
-    
   }
 
   &__img {
@@ -122,11 +130,9 @@
   }
   &__result {
     position: absolute;
-    font-family: "Montserrat Alternates";
     font-weight: 400;
     text-align: right;
     font-size: 12px;
-
 
     @media screen and (min-width: 1200px) {
       margin-top: -23px;

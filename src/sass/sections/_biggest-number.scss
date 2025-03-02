@@ -1,5 +1,4 @@
 .biggest-number-container{
-  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,24 +11,20 @@
   display: flex;
   justify-content: center;
   color: #000;
-  font-family: "Montserrat Alternates";
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 36px;
 }
 .sug-num-list {
   display: flex;
- 
   margin-bottom: 36px;
   @media screen and (min-width: 320px) {
+    flex-direction: column;
     gap: 15px;
   }
 
-  @media screen and (min-width: 480px) {
-    gap: 20px;
-  }
-
   @media screen and (min-width: 768px) {
+    flex-direction: row;
     gap: 28px;
   }
 
@@ -38,19 +33,19 @@
   }
 }
 .sug-num-item {
-  padding: 10px 20px;
-  gap: 10px;
   border-radius: 20px;
   background: #d7d7d7;
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
 }
 .sug-num-text {
   border: none;
   background-color: #d7d7d7;
   color: #7e7e7e;
-  font-family: "Montserrat Alternates";
   font-size: 12px;
   font-weight: 400;
+  width: 100px;
+  margin-right: auto;
 }
 .sug-num-text:focus {
   outline: none;
@@ -60,7 +55,6 @@
   display: flex;
   justify-content: center;
   color: #000;
-  font-family: "Montserrat Alternates";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -68,7 +62,6 @@
 }
 .big-num-res {
   color: #000;
-  font-family: "Montserrat Alternates";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;

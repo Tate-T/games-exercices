@@ -4,7 +4,6 @@
   align-items: center;
 
   &__container {
-    background-color: #fff;
     padding-bottom: 36px;
   }
   &__title {
@@ -13,10 +12,8 @@
     align-items: center;
     padding-bottom: 20px;
     color: #000;
-    font-family: "Montserrat Alternates";
     font-size: 18px;
     font-weight: 400;
-    margin-left: -220px;
     @media screen and (min-width: 768px) {
       margin-left: 15px;
     }

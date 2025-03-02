@@ -4,7 +4,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
   }
 
   &__title {
@@ -22,16 +21,29 @@
 
   &__field {
     cursor: url(./img/football-cursor.png), auto;
-    width: 720px;
-    height: 220px;
     flex-shrink: 0;
     border-radius: 37px;
     border: 2px solid #000;
     background: #5abb58;
     position: relative;
-
-    @media screen and (max-width: 1199px) {
-      max-width: 100%;
+    @media screen and (min-width: 320px) {
+      width: 280px;
+      height: 100px;
+    }
+  
+    @media screen and (min-width: 480px) {
+      width: 380px;
+      height: 140px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 640px;
+      height: 190px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 720px;
+      height: 220px;
     }
   }
 
