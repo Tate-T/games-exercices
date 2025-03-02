@@ -1,5 +1,4 @@
 .time-calculator{
-    padding-bottom: 36px;
   
     &-title {
       color: #000;
@@ -20,6 +19,7 @@
   
     &__content {
       background-color: #fff;
+      padding-bottom: 36px;
     }
   
     &-form {
@@ -31,7 +31,9 @@
   
     &-box {
       display: flex;
-      margin: 36px auto;
+      margin-top: 36px;
+      margin-left: auto;
+      margin-right: auto;
       width: 100%;
       max-width: 466px;
       flex-direction: column;
@@ -92,10 +94,8 @@
 
     }
     &-icons {
-      width: 20px;
-      height: 20px;
       position: absolute;
-      margin-top: -11px;
+      margin-top: -9px;
       margin-left: -12px;
       fill: white;
     }
@@ -112,6 +112,7 @@
       }
     }
   &__line {
+    margin-top: 0;
     width: 320px;
     height: 1px;
     flex-shrink: 0;

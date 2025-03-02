@@ -1,13 +1,13 @@
 .randnumb {
-    background-color: #fff;
-    width: 596px;
-    height: 182px;
-    padding-top: 32px;
-    margin-left: auto;
-    margin-right: auto;
-    border-top: 1px #000 solid;
-    border-bottom: 1px #000 solid;
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        padding-bottom: 36px;
+        background-color: #fff;
+    }
+
 
     &__lie {
         width: 720px;
@@ -30,11 +30,21 @@
 
     &__input-wrapper {
         display: flex;
-        padding: 31px;
+        flex-direction: row;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+        padding-right: 200px;
+        margin-right: 60px;
     }
 
     &__title {
-        padding-left: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding-bottom: 31px;
         color: #000;
         font-family: 'Montserrat Alternates';
@@ -45,10 +55,13 @@
     }
 
     &__line {
-        width: 730px;
-        height: 0.5px;
-        margin-left: -95px;
+        width: 736px;
+        height: 1px;
+        flex-shrink: 0;
+        stroke-width: 1px;
         background-color: #000;
+        border: none;
+        margin-bottom: 36px;
     }
 
     &__icons {
@@ -95,4 +108,23 @@
         display: block;
         visibility: visible;
     }
+
+    &__message-box {
+        margin-top: 30px;
+        padding-left: 149px;
+    }
+}
+
+.win {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: right;
+    color: #039900;
+}
+
+.lose {
+    color: red;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: right;
 }
