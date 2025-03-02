@@ -1,5 +1,10 @@
 .leap-year {
 
+  &__container {
+    background-color: #fff;
+    padding-bottom: 36px;
+  }
+
   &__title-box {
     color: #000;
     font-size: 16px;
@@ -120,8 +125,6 @@
   }
 
   &__img {
-    width: 20px;
-    height: 20px;
     position: absolute;
     margin-top: -10px;
     margin-left: -12px;

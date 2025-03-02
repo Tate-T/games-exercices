@@ -1,11 +1,21 @@
 .header {
+  background: #fff;
+}
+
+.header-container {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   text-align: center;
   align-items: center;
-  background: #eee;
 }
+
+button{
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
 
 .header-logo {
   display: flex;

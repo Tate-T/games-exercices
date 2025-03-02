@@ -1,4 +1,19 @@
 .biggest-number {
+ 
+}
+
+.biggest-number__line {
+  width: 736px;
+  height: 1px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+  background-color: #000;
+  border: none;
+  margin-bottom: 36px;
+}
+
+
+.biggest-number-container{
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -9,6 +24,8 @@
 }
 
 .big-num-title {
+  display: flex;
+  justify-content: center;
   color: #000;
   font-family: "Montserrat Alternates";
   font-size: 16px;
@@ -40,6 +57,8 @@
   box-shadow: none;
 }
 .final-res {
+  display: flex;
+  justify-content: center;
   color: #000;
   font-family: "Montserrat Alternates";
   font-size: 12px;
