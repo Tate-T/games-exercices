@@ -22,7 +22,7 @@
     
     <title>Coding Magic</title>
     <script type="module" crossorigin src="/games-exercices/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/games-exercices/assets/index-13c88a8c.css">
+    <link rel="stylesheet" href="/games-exercices/assets/index-f7641e41.css">
   </head>
   <body>
     <button id="scrollToTopBtn" class="scroll-to-top-btn">↑</button>
@@ -117,7 +117,8 @@
         </div>
     </div>
 </section>
-    <section class="randnumb" id="numerical">
+    <section class="randnumb" id="number">
+
   <div class="randnumb__container container">
     <div>
       <hr class="line" />
@@ -131,35 +132,20 @@
             id="guess"
             class="randnumb__input"
             placeholder="Введіть число"
-            min="0"
+            min="2"
             max="9"
           />
           <button class="randnumb__button">
-            <span class="randnumb__icon">
-              <svg
-                width="24"
-                height="24"
-                class="randnumb__icons"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g class="randnumb__eco" filter="url(#filter0_dd_27_33)">
-                  <circle
-                    cx="10.5217"
-                    cy="6.52174"
-                    r="5.52174"
-                    stroke="white"
-                    stroke-width="2"
-                    fill="transparent"
-                  />
-                  <path
-                    d="M18.2929  16.0976 19.3166 16.0976 19.7071 15.7071C20.0976 15.3166 20.0976 14.6834 19.7071 14.2929L18.2929 15.7071ZM15.468 10.0538L14.7609 9.34665L13.3467 10.7609L14.0538 11.468L15.468 10.0538ZM19.7071 14.2929L15.468 10.0538L14.0538 11.468L18.2929 15.7071L19.7071 14.2929Z"
-                    fill="white"
-                  />
+                <svg width="24" height="24" class="randnumb__img" viewBox="0 0 24 24" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                     <g class="randnumb__eco" filter="url(#filter0_dd_27_33)">
+                     <circle cx="10.5217" cy="6.52174" r="5.52174" stroke="white" stroke-width="2"
+                       fill="transparent" />
+                      <path
+                     d="M18.2929  16.0976 19.3166 16.0976 19.7071 15.7071C20.0976 15.3166 20.0976 14.6834 19.7071 14.2929L18.2929 15.7071ZM15.468 10.0538L14.7609 9.34665L13.3467 10.7609L14.0538 11.468L15.468 10.0538ZM19.7071 14.2929L15.468 10.0538L14.0538 11.468L18.2929 15.7071L19.7071 14.2929Z"
+                  fill="white" />
                 </g>
               </svg>
-            </span>
           </button>
         </div>
         <div class="randnumb__message-box">
@@ -200,31 +186,33 @@
             <hr class="line">
         </div>
         <h2 class="calculator__title">Калькулятор</h2>
-        <ul class="calculator__list">
-            <li>
-                <input class="calculator__input-1" type="number" placeholder="Введіть число">
-            </li>
-            <li class="calculator__elem">
-                <div class="calculator__row">
-                    <button class="calculator__button calculator__plus">+</button>
-                    <button class="calculator__button calculator__minus">-</button>
-                </div>
-                <div class="calculator__row">
-                    <button class="calculator__button calculator__double">*</button>
-                    <button class="calculator__button calculator__dilenya">/</button>
-                </div>
-            </li>
+        <div class="calculator__formater">
+            <ul class="calculator__list">
+                <li>
+                    <input class="calculator__input-1" type="number" placeholder="Введіть число">
+                </li>
+                <li class="calculator__elem">
+                    <div class="calculator__row">
+                        <button class="calculator__button calculator__plus">+</button>
+                        <button class="calculator__button calculator__minus">-</button>
+                    </div>
+                    <div class="calculator__row">
+                        <button class="calculator__button calculator__double">*</button>
+                        <button class="calculator__button calculator__dilenya">/</button>
+                    </div>
+                </li>
 
-            <li>
-                <input type="number" class="calculator__input-2" placeholder="Введіть число">
-            </li>
-            <li>
-                <button class="calculator__button calculator__dorivnue">=</button>
-            </li>
-            <li>
-                <input class="calculator__input-3" type="number" placeholder="Результат">
-            </li>
-        </ul>
+                <li>
+                    <input type="number" class="calculator__input-2" placeholder="Введіть число">
+                </li>
+                <li>
+                    <button class="calculator__button calculator__dorivnue">=</button>
+                </li>
+                <li>
+                    <input class="calculator__input-3" type="number" placeholder="Результат">
+                </li>
+            </ul>
+        </div>
     </div>
 </section>
     <section id="numerical" class="time-calculator">
@@ -514,20 +502,22 @@
         </div>
     </div>
 </section>
-    <section class="clicker" id="numerical">
-<div class="container">
-    <div class="game-container">
-        <h2>Клікер</h2>
-        <button id="start-button">Розпочати</button>
-        <div id="timer" class="timer"></div>
-        <div id="status-text" class="status-text">Неактивна фаза</div>
-        <div id="phase-description">Неактивна фаза - натисніть на кнопку розпочати, щоб почати випробування.<br> 1 клік на клавішу U прирівнюється 2 клікам на поле.</div>
-        <div id="click-area" class="click-area"></div>
-        <div id="clicks-text">Кліки: <span id="click-count">0</span>/3300</div>
-        <button id="stop-button">Відміна</button>
-        <div id="result"></div>
+    <hr class="line">
+<section class="clicker" id="number">
+    <div class="clicker__container container">
+        <h2 class='clicker__title'>Клікер</h2>
+        <button id="start-button" class="clicker__start-button" disabled>Розпочати</button>
+        <div id="timer" class="clicker__timer" style="color: pink;">00:50</div>
+        <div id="status-text" class="clicker__status-text">Неактивна фаза</div>
+        <div class="clicker__formater">
+        <div id="phase-description" class="clicker__phase-description">Прокинулось давне зло. Натискайте на поле допомагаючи Бундючикам(індичкам) його здолати.<span class="color"> Суворо заборонено натискати на кнопку розпочати під час підготовчої та активної фази. Якщо зробите це для нормальної гри перезавантажте сайт</br></div>
+        </div>
+            <div id="click-area" class="clicker__click-area clicker__click-area--inactive">
+            <div id="clicks-text" class="clicker__clicks-text clicker__clicks-text--hidden">Кліки: <span id="click-count">0</span>/3300</div>
+        </div>
+        <div id="result" class="clicker__result"></div>
+
     </div>
-</div>
 </section> 
     <footer id="footer" class="footer">
     <div class="footer__container container">
