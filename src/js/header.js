@@ -1,6 +1,6 @@
-const siteModeImagee = document.querySelector("#dark-mode-change");
+const siteModeImage = document.querySelector("#dark-mode-change");
 
-siteModeSelect.addEventListener("click", () => {
+siteModeImage.addEventListener("click", () => {
   const lightModeSrc = "./img/light-mode-change.webp";
   const darkModeSrc = "./img/dark-mode-change.webp";
 
