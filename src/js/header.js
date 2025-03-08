@@ -1,13 +1,14 @@
 const siteModeSelect = document.querySelector("#dark-mode-change");
+const siteModeImage = document.querySelector("#mode-image");
 
 siteModeSelect.addEventListener("click", () => {
-  const lightModeSrc = "../img/light-mode-change.webp";
-  const darkModeSrc = "../img/dark-mode-change.webp";
+  const lightModeSrc = "./img/light-mode-change.webp";
+  const darkModeSrc = "./img/dark-mode-change.webp";
 
-  if (siteModeSelect.src.includes("light-mode-change.webp")) {
-    siteModeSelect.src = darkModeSrc;
+  if (siteModeImage.src.includes("light-mode-change.webp")) {
+    siteModeImage.src = darkModeSrc;
   } else {
-    siteModeSelect.src = lightModeSrc;
+    siteModeImage.src = lightModeSrc;
   }
 });
 
