@@ -1,72 +1,130 @@
-      .game-container {
-           text-align: center;
-       }
+.color {
+    color: red;
+}
 
-       .blue-timer {
-           color: rgb(0, 26, 255);
-       }
+.clicker {
 
-       .click-area {
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           margin-top: 20px;
-           background-color: rgb(0, 89, 255);
-       }
+    &__start-button {
+        border-radius: 20px;
+        padding: 9px 20px;
+        box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+        background: #000;
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-size: 16px;
+        border: 1px rgba(255, 255, 255, 0) solid;
+        color: #fff;
+    }
 
-       .inactive {
-           background-color: rgb(0, 47, 255) !important;
-       }
+    &__phase-description {
+        width: 300px;
+        font-size: 13px;
 
-       .preparation {
-           background-color: rgb(0, 97, 0) !important;
-       }
+        @media screen and (min-width:768px) {
+            width: 650px;
+            height: 210px;
+            font-size: 16px;
+        }
+    }
 
-       .active {
-           background-color: yellow !important;
-       }
+    &__formater {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        height: 100px;
 
-       .timer {
-           font-size: 24px;
-           font-weight: bold;
-       }
+        @media screen and (min-width:768px) {
+            width: 650px;
+            height: 90px;
+        }
+    }
 
-       .status-text {
-           margin-bottom: 15px;
-           font-size: 18px;
-           font-weight: bold;
-       }
+    &__start-button:hover {
+        background-color: rgb(255, 255, 255);
+        border: 1px black solid;
+        color: black;
+    }
 
-       .green {
-           color: rgb(0, 92, 0);
-       }
+    &__title {
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-weight: 400;
 
-       .yellow {
-           color: orange;
-       }
+        @media screen and (min-width: 768px) {
+            font-size: 17px;
+        }
+    }
 
-       .red {
-           color: red;
-       }
+    &__container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-       #stop-button {
-           display: none;
-       }
+    &__click-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+        border-radius: 20px;
+        border: 4px double rgba(107, 107, 107, 0);
+        position: relative;
+        text-align: center;
+    }
 
-       #clicks-text {
-           display: none;
-       }
+    &__click-area--inactive {
+        background-color: rgb(0, 191, 255) !important;
+    }
 
-       @media (max-width: 768px) {
-           .click-area {
-               width: 320px;
-               height: 160px;
-           }
-       }
+    &__click-area--preparation {
+        background-color: rgb(0, 128, 0) !important;
+    }
 
-       @media (min-width: 768px) {
-           .click-area {
-               width: 700px;
-               height: 350px;
-           }
-       }
+    &__click-area--active {
+        background-color: yellow !important;
+    }
+
+    &__click-area--post-war {
+        background: linear-gradient(to right, rgb(251, 255, 0), rgb(0, 255, 255)) !important;
+    }
+
+    &__timer {
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 5px;
+        padding-top: 7px;
+        padding-left: 35px;
+        padding-right: 35px;
+        border-radius: 7px;
+        background: linear-gradient(to right, rgb(0, 255, 255), rgb(255, 196, 0)) !important;
+    }
+
+    @media screen and (min-width:768px) {}
+
+    &__status-text {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    &__clicks-text--hidden {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        &__click-area {
+            width: 320px;
+            height: 160px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        &__click-area {
+            width: 700px;
+            height: 350px;
+        }
+    }
+}
