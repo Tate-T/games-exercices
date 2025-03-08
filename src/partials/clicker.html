@@ -1,15 +1,16 @@
+<hr class="line">
 <section class="clicker" id="number">
-<div class="container">
-    <div class="game-container">
-        <h2>Клікер</h2>
-        <button id="start-button">Розпочати</button>
-        <div id="timer" class="timer"></div>
-        <div id="status-text" class="status-text">Неактивна фаза</div>
-        <div id="phase-description">Неактивна фаза - натисніть на кнопку розпочати, щоб почати випробування.<br> 1 клік на клавішу U прирівнюється 2 клікам на поле.</div>
-        <div id="click-area" class="click-area"></div>
-        <div id="clicks-text">Кліки: <span id="click-count">0</span>/3300</div>
-        <button id="stop-button">Відміна</button>
-        <div id="result"></div>
+    <div class="clicker__container container">
+        <h2 class='clicker__title'>Клікер</h2>
+        <button id="start-button" class="clicker__start-button" disabled>Розпочати</button>
+        <div id="timer" class="clicker__timer" style="color: pink;">00:50</div>
+        <div id="status-text" class="clicker__status-text">Неактивна фаза</div>
+        <div class="clicker__formater">
+        <div id="phase-description" class="clicker__phase-description">Прокинулось давне зло. Натискайте на поле допомагаючи Бундючикам(індичкам) його здолати.<span class="color"> Суворо заборонено натискати на кнопку розпочати під час підготовчої та активної фази. Якщо зробите це для нормальної гри перезавантажте сайт</br></div>
+        </div>
+            <div id="click-area" class="clicker__click-area clicker__click-area--inactive">
+            <div id="clicks-text" class="clicker__clicks-text clicker__clicks-text--hidden">Кліки: <span id="click-count">0</span>/3300</div>
+        </div>
+        <div id="result" class="clicker__result"></div>
     </div>
-</div>
 </section>

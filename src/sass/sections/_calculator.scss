@@ -6,26 +6,49 @@
   &__container {
     padding-bottom: 36px;
   }
+
   &__title {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
     color: #000;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
+
     @media screen and (min-width: 768px) {
       margin-left: 15px;
+      font-size: 17px;
+    }
+  }
+
+  &__formater {
+    margin-left: 25%;
+
+    @media screen and (min-width:768px) {
+      margin-left: 0;
     }
   }
 
   &__list {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    gap: 35px;
+    gap: 25px;
     margin-bottom: 20px;
     flex-wrap: wrap;
+    width: 210px;
+
+    @media screen and (min-width:768px) {
+      gap: 15px;
+      justify-content: center;
+      width: auto;
+      align-items: center;
+    }
+
+    @media screen and (min-width:1200px) {
+      gap: 35px;
+    }
   }
 
   &__input-1,
@@ -33,14 +56,23 @@
   &__input-3 {
     font-family: "Montserrat";
     border-radius: 20px;
-    padding: 10px 20px;
-    width: 135px;
+    padding: 5px 10px;
+    width: 105px;
     height: 35px;
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
     background: #d7d7d7;
     font-weight: 400;
     font-size: 12px;
     color: #7e7e7e;
+
+    @media screen and (min-width:768px) {
+      width: 105px;
+    }
+
+    @media screen and (min-width:1200px) {
+      width: 135px;
+      padding: 10px 20px;
+    }
   }
 
   &__elem {
