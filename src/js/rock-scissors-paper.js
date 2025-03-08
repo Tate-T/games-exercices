@@ -1,15 +1,14 @@
-const rock = document.getElementById("rock")
-const scissors = document.getElementById("scissors")
-const paper = document.getElementById("paper")
-const result = document.getElementById("rsp-result")
-const checkResult = document.getElementById("check-result")
+const rock = document.getElementById("rock");
+const scissors = document.getElementById("scissors");
+const paper = document.getElementById("paper");
+const result = document.getElementById("rsp-result");
+const checkResult = document.getElementById("check-result");
 const personScore = document.getElementById("person-score");
 const compScore = document.getElementById("comp-score");
 
 let userChoice = null;
 let peopleScore = 0;
 let botScore = 0;
-
 
 function clearActiveClasses() {
     rock.style.border = 0;
@@ -21,7 +20,6 @@ rock.addEventListener("click", () => {
     userChoice = 1;
     clearActiveClasses();
     rock.style.border = "solid 2px #001";
-
 });
 
 paper.addEventListener("click", () => {
@@ -38,7 +36,15 @@ scissors.addEventListener("click", () => {
 
 function play(botAnswer) {
     let resultMessage;
+    let botChoiceText = "";
 
+    if (botAnswer === 1) {
+        botChoiceText = "Комп'ютер вибрав Камінь";
+    } else if (botAnswer === 2) {
+        botChoiceText = "Комп'ютер вибрав Ножиці";
+    } else if (botAnswer === 3) {
+        botChoiceText = "Комп'ютер вибрав Папір";
+    }
     if (userChoice === botAnswer) {
         result.style.color = 'black';
         resultMessage = "Нічия!";
@@ -58,7 +64,7 @@ function play(botAnswer) {
         resultMessage = "Комп'ютер виграв раунд!";
     }
 
-    result.textContent = resultMessage;
+    result.textContent = `${resultMessage}. ${botChoiceText}`;
 }
 
 checkResult.addEventListener("click", () => {
@@ -67,6 +73,5 @@ checkResult.addEventListener("click", () => {
 
         let botAnswer = Math.floor(Math.random() * 3) + 1;
         play(botAnswer);
-
     }
 });
