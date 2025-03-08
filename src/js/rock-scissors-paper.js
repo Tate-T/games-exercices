@@ -45,20 +45,21 @@ function play(botAnswer) {
     } else if (botAnswer === 3) {
         botChoiceText = "Комп'ютер вибрав Папір";
     }
+
     if (userChoice === botAnswer) {
         result.style.color = 'black';
         resultMessage = "Нічия!";
     } else if (
         (userChoice === 1 && botAnswer === 3) ||
-        (userChoice === 2 && botAnswer === 1) ||
-        (userChoice === 3 && botAnswer === 2)
+        (userChoice === 3 && botAnswer === 2) ||  
+        (userChoice === 2 && botAnswer === 1)     
     ) {
-        peopleScore++;
+        peopleScore++; // Людина виграє
         personScore.textContent = peopleScore;
         resultMessage = "Ви виграли раунд!";
         result.style.color = 'green';
     } else {
-        botScore++;
+        botScore++; // Комп'ютер виграє
         compScore.textContent = botScore;
         result.style.color = 'red';
         resultMessage = "Комп'ютер виграв раунд!";
