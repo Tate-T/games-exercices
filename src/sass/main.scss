@@ -33,4 +33,24 @@
     background-color: #ffffff;
     color: #000;
   }
+
+  .scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .scroll-to-top-btn:hover {
+    background-color: rgb(56, 56, 56);
+    transition: all ease-in 0.2s;
+  }
+  
   

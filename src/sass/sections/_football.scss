@@ -11,13 +11,39 @@
     justify-content: center;
     margin-bottom: 36px;
     color: #000;
-    font-family: "Montserrat";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
   }
 
+  &__count {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__net {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    rotate: 90deg;
+  }
+
+  &__second-net {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 60px;
+    rotate: 270deg;
+  }
 
   &__field {
     cursor: url(./img/football-cursor.png), auto;

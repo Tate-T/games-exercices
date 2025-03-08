@@ -12,6 +12,14 @@ closeModalButtons.forEach(button => {
   button.addEventListener("click", closeModal);
 });
 
+inputField.addEventListener("input", () => {
+  if (inputField.value.trim() !== "") {
+    saveButton.disabled = false;  // Активуємо кнопку
+  } else {
+    saveButton.disabled = true;   // Деактивуємо кнопку
+  }
+});
+
 saveButton.addEventListener("click", () => {
   const userName = inputField.value.trim();
   if (userName) {
