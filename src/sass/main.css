@@ -203,6 +203,7 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-top: 40px;
 }
 .open-modal__text {
   color: #000;
@@ -225,7 +226,6 @@ html {
   border-radius: 20px;
   background: #D7D7D7;
   color: #7E7E7E;
-  font-family: "Montserrat";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -240,7 +240,6 @@ html {
   background: #000;
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
   color: #FFF;
-  font-family: "Montserrat";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -596,7 +595,7 @@ section.hidden {
 .sug-num-list {
   display: flex;
   margin-bottom: 36px;
-
+  justify-content: center;
 }
 @media screen and (min-width: 320px) {
   .sug-num-list {
@@ -670,7 +669,7 @@ section.hidden {
   align-items: center;
   padding-bottom: 20px;
   color: #000;
-  font-size: 14px
+  font-size: 14px;
   font-weight: 400;
 }
 @media screen and (min-width: 768px) {
@@ -708,14 +707,12 @@ section.hidden {
   .calculator__list {
     gap: 35px;
   }
-
 }
 .calculator__input-1, .calculator__input-2, .calculator__input-3 {
   font-family: "Montserrat";
   border-radius: 20px;
   padding: 5px 10px;
   width: 105px;
-
   height: 35px;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
   background: #d7d7d7;
@@ -723,7 +720,6 @@ section.hidden {
   font-size: 12px;
   color: #7e7e7e;
 }
-
 @media screen and (min-width: 768px) {
   .calculator__input-1, .calculator__input-2, .calculator__input-3 {
     width: 105px;
@@ -802,7 +798,6 @@ input[type=number]::-webkit-inner-spin-button {
   align-items: flex-start;
   color: #fff;
   text-align: right;
-  font-family: "Montserrat";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -833,7 +828,6 @@ input[type=number]::-webkit-inner-spin-button {
 .scientist__description {
   text-align: center;
   color: #fff;
-  font-family: "Montserrat";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -882,14 +876,37 @@ input[type=number]::-webkit-inner-spin-button {
   justify-content: center;
   margin-bottom: 36px;
   color: #000;
-  font-family: "Montserrat";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
+.football__count {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.football__net {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  rotate: 90deg;
+}
+.football__second-net {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 60px;
+  rotate: 270deg;
+}
 .football__field {
-  cursor: url(./img/football-cursor.png), auto;
   flex-shrink: 0;
   border-radius: 37px;
   border: 2px solid #000;
@@ -1079,6 +1096,7 @@ input[type=number]::-webkit-inner-spin-button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
 .randnumb__message {
   font-size: 18px;
   margin-top: 10px;
@@ -1249,14 +1267,14 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .leap-year__input::-moz-placeholder {
   color: #7e7e7e;
-  font-size: 15px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 .leap-year__input::placeholder {
   color: #7e7e7e;
-  font-size: 15px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -1435,7 +1453,6 @@ input[type=number]::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   color: #000;
-  font-family: "Montserrat";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1460,7 +1477,6 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .rsp__results-desc {
   color: #000;
-  font-family: "Montserrat";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1469,7 +1485,6 @@ input[type=number]::-webkit-inner-spin-button {
 .rsp__text {
   margin-bottom: 36px;
   color: #039900;
-  font-family: "Montserrat";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1477,7 +1492,6 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .rsp__computer-button {
   color: #FFF;
-  font-family: "Montserrat";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1708,12 +1722,12 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 @media (min-width: 768px) {
-  
   .clicker__click-area {
     width: 700px;
     height: 350px;
   }
 }
+
 .footer {
   background-color: #fff;
 }
@@ -1833,6 +1847,22 @@ input[type=number]::-webkit-inner-spin-button {
   .footer__form {
     text-align: center;
   }
+}
+.footer__box-item {
+  position: relative;
+  margin-top: 30px;
+  padding-left: 25px;
+}
+@media screen and (min-width: 768px) {
+  .footer__box-item {
+    padding-left: 149px;
+  }
+}
+.footer__form-result {
+  position: absolute;
+  font-weight: 400;
+  text-align: right;
+  font-size: 12px;
 }
 .footer__form-email {
   display: inline-flex;
@@ -1957,4 +1987,23 @@ body.dark-mode {
 button.dark-mode {
   background-color: #ffffff;
   color: #000;
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.scroll-to-top-btn:hover {
+  background-color: rgb(56, 56, 56);
+  transition: all ease-in 0.2s;
 }/*# sourceMappingURL=main.css.map */

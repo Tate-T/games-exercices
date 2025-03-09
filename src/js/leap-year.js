@@ -1,6 +1,6 @@
-const yearInput = document.getElementById("yearInput");
-const checkButton = document.getElementById("checkButton");
-const resultDisplay = document.getElementById("result");
+const yearInput = document.querySelector("#yearInput");
+const checkButton = document.querySelector("#checkButton");
+const resultDisplay = document.querySelector("#result");
 
 function isLeapYear(year) {
     return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
