@@ -108,6 +108,19 @@
       text-align: center;
     }
   }
+
+
+
+  &__form-result {
+      color: darkred;
+      font-size: 12px;
+      font-weight: 400;
+      margin-right: 25px;
+      margin-bottom: 10px;
+
+  }
+
+
   &__form-email {
     display: inline-flex;
     padding: 10px 80px 10px 10px;
@@ -141,7 +154,6 @@
       align-items: flex-start;
       gap: 10px;
       border-radius: 20px;
-      background: #d7d7d7;
     }
   }
 
@@ -170,6 +182,7 @@
 
     @media screen and (min-width: 768px) {
       display: block;
+      margin-left: auto;
       margin-right: auto;
       margin-bottom: 10px;
     }

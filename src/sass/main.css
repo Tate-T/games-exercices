@@ -899,6 +899,7 @@ input[type=number]::-webkit-inner-spin-button {
   right: 0px;
   rotate: 90deg;
 }
+
 @media screen and (min-width: 320px) {
   .football__net {
     top: 22px;
@@ -920,6 +921,7 @@ input[type=number]::-webkit-inner-spin-button {
     height: 100px;
   }
 }
+
 .football__second-net {
   width: 100px;
   height: 100px;
@@ -927,6 +929,7 @@ input[type=number]::-webkit-inner-spin-button {
   top: 60px;
   rotate: 270deg;
 }
+
 @media screen and (min-width: 320px) {
   .football__second-net {
     top: 22px;
@@ -948,8 +951,8 @@ input[type=number]::-webkit-inner-spin-button {
     height: 100px;
   }
 }
+
 .football__field {
-  cursor: url(./img/football-cursor.png), auto;
   flex-shrink: 0;
   border-radius: 37px;
   border: 2px solid #000;
@@ -1328,14 +1331,14 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .leap-year__input::-moz-placeholder {
   color: #7e7e7e;
-  font-size: 15px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 .leap-year__input::placeholder {
   color: #7e7e7e;
-  font-size: 15px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -1909,6 +1912,22 @@ input[type=number]::-webkit-inner-spin-button {
   .footer__form {
     text-align: center;
   }
+}
+.footer__box-item {
+  position: relative;
+  margin-top: 30px;
+  padding-left: 25px;
+}
+@media screen and (min-width: 768px) {
+  .footer__box-item {
+    padding-left: 149px;
+  }
+}
+.footer__form-result {
+  position: absolute;
+  font-weight: 400;
+  text-align: right;
+  font-size: 12px;
 }
 .footer__form-email {
   display: inline-flex;
