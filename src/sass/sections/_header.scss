@@ -19,7 +19,6 @@
 
 button {
   background-color: #f1f1f1;
-  border: none;
   cursor: pointer;
 }
 
@@ -51,17 +50,13 @@ button {
 .header-logo-item-1 {
   color: #000;
   font-size: 13px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 .header-logo-item-2 {
   color: #000;
   font-family: Sacramento;
   font-size: 13px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 .site-interaktiv-list {
   display: flex;
@@ -138,9 +133,7 @@ button {
 .header-hello-user {
   color: #000;
   text-align: right;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 .sec-select {
   border-radius: 0px 0px 20px 20px;
@@ -180,10 +173,6 @@ button {
 
 .bottom-radius {
   border-radius: 0px 0px 20px 20px;
-}
-
-.site-interaktiv {
-  position: relative;
 }
 
 section.hidden {
