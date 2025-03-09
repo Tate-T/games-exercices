@@ -899,7 +899,6 @@ input[type=number]::-webkit-inner-spin-button {
   right: 0px;
   rotate: 90deg;
 }
-
 @media screen and (min-width: 320px) {
   .football__net {
     top: 22px;
@@ -921,7 +920,6 @@ input[type=number]::-webkit-inner-spin-button {
     height: 100px;
   }
 }
-
 .football__second-net {
   width: 100px;
   height: 100px;
@@ -929,7 +927,6 @@ input[type=number]::-webkit-inner-spin-button {
   top: 60px;
   rotate: 270deg;
 }
-
 @media screen and (min-width: 320px) {
   .football__second-net {
     top: 22px;
@@ -951,8 +948,8 @@ input[type=number]::-webkit-inner-spin-button {
     height: 100px;
   }
 }
-
 .football__field {
+  cursor: url(./img/football-cursor.png), auto;
   flex-shrink: 0;
   border-radius: 37px;
   border: 2px solid #000;
@@ -1913,21 +1910,12 @@ input[type=number]::-webkit-inner-spin-button {
     text-align: center;
   }
 }
-.footer__box-item {
-  position: relative;
-  margin-top: 30px;
-  padding-left: 25px;
-}
-@media screen and (min-width: 768px) {
-  .footer__box-item {
-    padding-left: 149px;
-  }
-}
 .footer__form-result {
-  position: absolute;
-  font-weight: 400;
-  text-align: right;
+  color: darkred;
   font-size: 12px;
+  font-weight: 400;
+  margin-right: 25px;
+  margin-bottom: 10px;
 }
 .footer__form-email {
   display: inline-flex;
@@ -1965,7 +1953,6 @@ input[type=number]::-webkit-inner-spin-button {
     align-items: flex-start;
     gap: 10px;
     border-radius: 20px;
-    background: #d7d7d7;
   }
 }
 .footer__button {
@@ -1996,6 +1983,7 @@ input[type=number]::-webkit-inner-spin-button {
 @media screen and (min-width: 768px) {
   .footer__button {
     display: block;
+    margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
   }
