@@ -1,8 +1,8 @@
 const siteModeImage = document.querySelector("#dark-mode-change");
 
 siteModeImage.addEventListener("click", () => {
-  const lightModeSrc = "img/light-mode-change.webp";
-  const darkModeSrc = "img/dark-mode-change.webp";
+  const lightModeSrc = "../img/light-mode-change.webp";
+  const darkModeSrc = "../img/dark-mode-change.webp";
 
   if (siteModeImage.src.endsWith("light-mode-change.webp")) {
     siteModeImage.src = darkModeSrc;
@@ -32,6 +32,9 @@ arrowPO.addEventListener("click", () => {
     butArrow.style.visibility = "hidden";
     butArrow.style.pointerEvents = "none";
     selectSec.classList.remove("visible");
+    numerical.forEach((item) => item.classList.remove("hidden"));
+    playing.forEach((item) => item.classList.remove("hidden"));
+    acquaintance.forEach((item) => item.classList.remove("hidden"));
   } else {
     selectSec.classList.add("visible");
   }
