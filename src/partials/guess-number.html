@@ -1,38 +1,31 @@
 <section class="randnumb" id="number">
-
   <div class="randnumb__container container">
     <div>
       <hr class="line" />
     </div>
-    <h1 class="randnumb__title">Вгадай число, яке загадав комп'ютер</h1>
-    <form class="randnumb__form">
-      <div class="randnumb__input-wrapper">
-        <div class="randnumb__input-norm">
-          <input
-            type="number"
-            id="guess"
-            class="randnumb__input"
-            placeholder="Введіть число"
-            min="2"
-            max="9"
-          />
-          <button class="randnumb__button">
-                <svg width="24" height="24" class="randnumb__img" viewBox="0 0 24 24" fill="none"
-                   xmlns="http://www.w3.org/2000/svg">
-                     <g class="randnumb__eco" filter="url(#filter0_dd_27_33)">
-                     <circle cx="10.5217" cy="6.52174" r="5.52174" stroke="white" stroke-width="2"
-                       fill="transparent" />
-                      <path
-                     d="M18.2929  16.0976 19.3166 16.0976 19.7071 15.7071C20.0976 15.3166 20.0976 14.6834 19.7071 14.2929L18.2929 15.7071ZM15.468 10.0538L14.7609 9.34665L13.3467 10.7609L14.0538 11.468L15.468 10.0538ZM19.7071 14.2929L15.468 10.0538L14.0538 11.468L18.2929 15.7071L19.7071 14.2929Z"
-                  fill="white" />
+    <div class="randnumb__formater">
+      <h1 class="randnumb__title">Вгадай число, яке загадав комп'ютер</h1>
+      <form class="randnumb__form">
+        <div class="randnumb__input-wrapper">
+          <div class="randnumb__input-norm">
+            <input type="number" id="guess" class="randnumb__input" placeholder="Введіть число" min="2" max="9" />
+            <button class="randnumb__button">
+              <svg width="24" height="24" class="randnumb__img" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="randnumb__eco" filter="url(#filter0_dd_27_33)">
+                  <circle cx="10.5217" cy="6.52174" r="5.52174" stroke="white" stroke-width="2" fill="transparent" />
+                  <path
+                    d="M18.2929  16.0976 19.3166 16.0976 19.7071 15.7071C20.0976 15.3166 20.0976 14.6834 19.7071 14.2929L18.2929 15.7071ZM15.468 10.0538L14.7609 9.34665L13.3467 10.7609L14.0538 11.468L15.468 10.0538ZM19.7071 14.2929L15.468 10.0538L14.0538 11.468L18.2929 15.7071L19.7071 14.2929Z"
+                    fill="white" />
                 </g>
               </svg>
-          </button>
+            </button>
+          </div>
+          <div class="randnumb__message-box">
+            <p id="message" class="randnumb__message"></p>
+          </div>
         </div>
-        <div class="randnumb__message-box">
-          <p id="message" class="randnumb__message"></p>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 </section>

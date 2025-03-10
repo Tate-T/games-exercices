@@ -4,45 +4,60 @@
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  // animation: ext 8s ease-out;
   width: 320px;
 
   @media screen and (min-width: 768px) {
     width: 768px;
   }
 
-  &__container {
+  &__formater {
     padding-bottom: 36px;
+    @media screen and (min-width: 480px) {
+      position: relative;
+      right: -10%;
+    }
+
+    @media screen and (min-width: 768px) {
+      position: sticky;
+    }
   }
 
   &__form {
     display: flex;
+    margin-left: 0px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 0;
+    }
   }
 
   &__input-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 0;
+    max-width: 900px;
+    align-items: center;
+    justify-content: center;
 
     @media screen and (min-width: 768px) {
       flex-direction: row;
-      gap: 216px;
+      justify-content: flex-start;
     }
   }
 
   &__input-norm {
     display: flex;
+    align-items: center;
     border-radius: 40px;
     background-color: #d7d7d7;
-    margin-left: 29px;
+    margin-left: 50px;
     justify-content: start;
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-    flex-direction: row;
-    width: 215px;
-    position: absolute;
+    width: 150px;
+    position: relative;
+    box-sizing: border-box;
 
     @media screen and (min-width: 768px) {
-      margin-left: 55px;
       width: 150px;
     }
   }
@@ -61,19 +76,6 @@
       margin-left: 25%;
     }
   }
-
-  // @keyframes ext {
-  //     0% {
-  //         transform: scale(1);
-  //     }
-  //     100% {
-  //         transform: scale(1.2);
-  //     }
-  //     100% {
-  //         transform: scale(1);
-  //     }
-
-  //   }
 
   &__icons {
     fill: #fff;
@@ -116,13 +118,6 @@
     line-height: normal;
   }
 
-  &__message {
-    font-size: 18px;
-    margin-top: 10px;
-    display: block;
-    visibility: visible;
-  }
-
   &__icons {
     fill: #fff;
     margin: 0;
@@ -130,7 +125,7 @@
   }
 
   &__input {
-    font-family: "Montserrat";
+    font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
     background-color: #d7d7d7;
     border-start-start-radius: 20px;
@@ -138,20 +133,22 @@
     padding: 18px 10px 18px 10px;
     border: none;
     align-items: flex-start;
-    width: 179px;
+    width: 279px;
     height: 32px;
+    font-size: 12px;
     border-radius: 20px;
 
     @media screen and (min-width: 768px) {
-      width: 115px;
-      padding: 18px 10px 18px 10px;
+      width: 150px;
+      padding: 18px 44px 17px 10px;
     }
   }
 
   &__input::placeholder {
     color: #7e7e7e;
-    font-size: 15px;
+    font-size: 12px;
     font-style: normal;
+    font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
     line-height: normal;
   }
@@ -159,12 +156,18 @@
   &__message {
     font-size: 12px;
     margin-top: 10px;
-    display: block;
     visibility: visible;
     text-align: center;
+    margin-top: 20px;
+    position: relative;
+    left: 9%;
 
     @media screen and (min-width: 768px) {
-      text-align: end;
+      text-align: right;
+      margin-left: 217px;
+      font-size: 12px;
+      margin-top: 0;
+      position: static;
     }
   }
 }

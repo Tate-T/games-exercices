@@ -29,12 +29,29 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     function setOperator(op) {
         operator = op;
-        calculate();
     }
-    document.querySelector(".calculator__plus").addEventListener("click", () => setOperator("+"));
-    document.querySelector(".calculator__minus").addEventListener("click", () => setOperator("-"));
-    document.querySelector(".calculator__double").addEventListener("click", () => setOperator("*"));
-    document.querySelector(".calculator__dilenya").addEventListener("click", () => setOperator("/"));    num1.addEventListener("input", calculate);
-    num2.addEventListener("input", calculate);
-    document.querySelector(".calculator__dorivnue").addEventListener("click", calculate);
+    function handleButtonClick(button) {
+        document.querySelectorAll(".calculator__button").forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+    }
+    document.querySelector(".calculator__plus").addEventListener("click", (e) => {
+        setOperator("+");
+        handleButtonClick(e.target);
+    });
+    document.querySelector(".calculator__minus").addEventListener("click", (e) => {
+        setOperator("-");
+        handleButtonClick(e.target);
+    });
+    document.querySelector(".calculator__double").addEventListener("click", (e) => {
+        setOperator("*");
+        handleButtonClick(e.target);
+    });
+    document.querySelector(".calculator__dilenya").addEventListener("click", (e) => {
+        setOperator("/");
+        handleButtonClick(e.target);
+    });
+    document.querySelector(".calculator__dorivnue").addEventListener("click", (e) => {
+        calculate();
+        handleButtonClick(e.target);
+    });
 });

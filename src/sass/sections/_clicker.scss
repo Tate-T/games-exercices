@@ -1,9 +1,10 @@
 .color {
     color: red;
 }
-
+.high {
+    margin-top: 1px;
+}
 .clicker {
-
     &__start-button {
         border-radius: 20px;
         padding: 9px 20px;
@@ -18,13 +19,13 @@
 
     &__phase-description {
         width: 300px;
-        font-size: 13px;
+        font-size: 10px;
 
         @media screen and (min-width:768px) {
-            width: 650px;
+            width: 790px;
             height: 210px;
-            font-size: 16px;
-            margin-top: 135px;
+            font-size: 14px;
+            margin-top: 110px;
         }
     }
 
@@ -92,13 +93,14 @@
     }
 
     &__timer {
-        font-size: 24px;
+        font-size: 30px;
         font-weight: bold;
-        padding-bottom: 5px;
-        padding-top: 7px;
-        padding-left: 35px;
-        padding-right: 35px;
-        border-radius: 7px;
+        width: 320px;
+        padding-top: 17px;
+        border-radius: 40px;
+-webkit-text-stroke-color: #000;
+-webkit-text-stroke-width: 1px;
+        height: 70px;
         background: linear-gradient(to right, rgb(0, 255, 255), rgb(255, 196, 0)) !important;
     }
 
