@@ -1,5 +1,5 @@
 .header {
-  background-color: #f1f1f1;
+  background-color: #eee;
   display: flex;
   position: fixed;
   width: 100%;
@@ -116,17 +116,21 @@
 }
 
 #dark-mode-change {
-  @media screen and (min-width: 320px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @media screen and (min-width: 768px) {
-    margin-left: 10px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-left: 51px;
-    margin-right: 51px;
-  }
+@media screen and (min-width: 320px) {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  padding-left: 51px;
+  padding-right: 51px;
+}
+
 }
 .header-hello-user {
   color: #000;

@@ -16,42 +16,65 @@
 @use "./sections/clicker" as *;
 @use "./sections/cooks-of-future" as *;
 @use "./sections/footer" as *;
-  
-  button.dark-mode {
-    background-color: #000;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
- 
 
-  body.dark-mode {
-    background-color: #7E7E7E;
-  }
-  
-  button.dark-mode {
-    background-color: #ffffff;
-    color: #000;
-  }
+body, header, footer, .open-modal, .footer-modal {
+  transition: background-color 0.3s ease;
+}
 
-  .scroll-to-top-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    padding: 10px 15px;
-    font-size: 18px;
-    cursor: pointer;
-    z-index: 1000;
-  }
-  
-  .scroll-to-top-btn:hover {
-    background-color: rgb(56, 56, 56);
-    transition: all ease-in 0.2s;
-  }
-  
-  
+h1, h2, h3, h4, h5, h6, p, a {
+  transition: color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: gray;
+  color: #f1f1f1;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode a {
+  color: #f1f1f1;
+}
+
+body.dark-mode::before {
+  background-color: gray;
+}
+
+header.dark-mode, footer.dark-mode {
+  background-color: darkgray;
+}
+
+.open-modal.dark-mode, .footer-modal.dark-mode {
+  background-color: gray;
+}
+
+
+#dark-mode-change {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.scroll-to-top-btn:hover {
+  background-color: rgb(56, 56, 56);
+  transition: all ease-in 0.2s;
+}
