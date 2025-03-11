@@ -1,0 +1,37 @@
+.cook-of-future {
+    height: 250px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    &__formater {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        height: 100px;
+
+        @media screen and (min-width:768px) {
+            width: 650px;
+            height: 90px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        padding-bottom: 31px;
+        color: #000;
+        font-size: 14px;
+        margin-top: 53px;
+        font-weight: 400;
+        margin-left: 15%;
+
+        @media screen and (min-width: 768px) {
+            font-size: 17px;
+            margin-left: 33%;
+        }
+    }
+}
