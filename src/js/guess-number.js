@@ -9,7 +9,7 @@ function getRandomNumber() {
 let randomNumber = getRandomNumber();
 
 checkButton.addEventListener("click", (event) => {
-    event.preventDefault(); // Prevent the default behavior of the button
+    event.preventDefault();
 
     const userGuess = parseInt(numberInput.value, 10);
     if (Number(userGuess) && userGuess >= 2 && userGuess <= 9) {
@@ -21,7 +21,7 @@ checkButton.addEventListener("click", (event) => {
             resultDisplay.style.fontWeight = 400;  
         } else {
             resultDisplay.textContent = `Ви програли, комп’ютер загадав (${randomNumber})`;
-            resultDisplay.style.color = 'rgb(144, 9, 0)';
+            resultDisplay.style.color = "darkred";
             resultDisplay.style.fontSize = '12px';
             resultDisplay.style.textAlign = 'right';
             resultDisplay.style.fontWeight = 400; 

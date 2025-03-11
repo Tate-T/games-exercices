@@ -12,23 +12,6 @@
 
   &__formater {
     padding-bottom: 36px;
-    @media screen and (min-width: 480px) {
-      position: relative;
-      right: -10%;
-    }
-
-    @media screen and (min-width: 768px) {
-      position: sticky;
-    }
-  }
-
-  &__form {
-    display: flex;
-    margin-left: 0px;
-
-    @media screen and (min-width: 768px) {
-      margin-left: 0;
-    }
   }
 
   &__input-wrapper {
@@ -37,11 +20,10 @@
     gap: 0;
     max-width: 900px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     @media screen and (min-width: 768px) {
       flex-direction: row;
-      justify-content: flex-start;
     }
   }
 
@@ -50,7 +32,6 @@
     align-items: center;
     border-radius: 40px;
     background-color: #d7d7d7;
-    margin-left: 50px;
     justify-content: start;
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
     width: 150px;
@@ -70,10 +51,10 @@
     font-size: 14px;
     margin-top: 53px;
     font-weight: 400;
+    justify-content: center;
 
     @media screen and (min-width: 768px) {
-      font-size: 17px;
-      margin-left: 25%;
+      font-size: 16px;
     }
   }
 
@@ -98,7 +79,7 @@
 
   &__img {
     position: absolute;
-    margin-top: 5px;
+    margin-top: 7px;
     margin-left: 2px;
     fill: white;
   }
@@ -155,19 +136,11 @@
 
   &__message {
     font-size: 12px;
-    margin-top: 10px;
     visibility: visible;
     text-align: center;
-    margin-top: 20px;
-    position: relative;
-    left: 9%;
 
-    @media screen and (min-width: 768px) {
-      text-align: right;
-      margin-left: 217px;
-      font-size: 12px;
-      margin-top: 0;
-      position: static;
+        @media screen and (max-width: 767px) {
+      margin-top: 20px;
     }
   }
 }
@@ -180,7 +153,7 @@
 }
 
 .lose {
-  color: red;
+  color: darkred;
   font-weight: 400;
   font-size: 12px;
   text-align: right;

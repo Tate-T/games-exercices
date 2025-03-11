@@ -7,11 +7,11 @@
   }
 
   @media screen and (min-width: 480px) {
-    width: 475px;
+    width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 700px;
+    width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -29,6 +29,21 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   padding-top: 120px;
+    @media screen and (min-width: 320px) {
+    padding-top: 120px;
+  }
+
+  @media screen and (min-width: 480px) {
+    padding-top: 120px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 80px;
+  }
 }
 
 body::before {
@@ -93,7 +108,7 @@ body.dark-mode::before {
   margin-bottom: 36px;
 
   @media screen and (min-width: 320px) {
-    width: 200px;
+    width: 250px;
   }
 
   @media screen and (min-width: 480px) {
