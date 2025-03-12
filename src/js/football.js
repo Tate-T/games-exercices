@@ -1,14 +1,19 @@
 const ball = document.querySelector(".football__ball");
 const field = document.querySelector(".football__field");
 const goalLeft = document.querySelector("#goal-left");
-const goalRight = document.querySelector("#goal-right");
 const goalCount = document.querySelector("#goal-count");
+const timerDisplay = document.querySelector("#timer");
+const startButton = document.querySelector(".football__start");
+const stopButton = document.querySelector(".football__stop");
 
 let goals = 0;
-let isGoal = false; 
+let isGoal = false;
+let timerInterval;
+let timeRemaining = 30;
+let isTimerRunning = false;
 
 field.onclick = function (event) {
-    if (isGoal) return; 
+    if (!isTimerRunning || isGoal) return;
 
     let fieldCoords = this.getBoundingClientRect();
 
@@ -18,7 +23,6 @@ field.onclick = function (event) {
     };
 
     if (ballCoords.top < 0) ballCoords.top = 0;
-
     if (ballCoords.left < 0) ballCoords.left = 0;
 
     if (ballCoords.left + ball.clientWidth > field.clientWidth) {
@@ -41,30 +45,68 @@ field.onclick = function (event) {
         isGoal = true;
         setTimeout(() => {
             goals++;
-            goalCount.textContent = goals; 
+            goalCount.textContent = goals;
         }, 1000);
         
         setTimeout(resetBall, 3000);
     }
-
-    
-    if (
-        ballCoords.left + ball.clientWidth > goalRight.offsetLeft &&
-        ballCoords.left < goalRight.offsetLeft + goalRight.clientWidth &&
-        ballCoords.top + ball.clientHeight > goalRight.offsetTop &&
-        ballCoords.top < goalRight.offsetTop + goalRight.clientHeight
-    ) {
-        isGoal = true;
-        setTimeout(() => {
-            goals++;
-            goalCount.textContent = goals;
-        }, 1000);
-        
-        setTimeout(resetBall, 1500);
-    }
 };
+
 function resetBall() {
-    ball.style.left = '340px';
-    ball.style.top = '82px';
+    let fieldCoords = field.getBoundingClientRect();
+
+    let centerX = fieldCoords.left + (field.clientWidth / 2) - (ball.clientWidth / 2);
+    let centerY = fieldCoords.top + (field.clientHeight / 2) - (ball.clientHeight / 2);
+
+    if (centerX < fieldCoords.left) {
+        centerX = fieldCoords.left;
+    }
+
+    if (centerY < fieldCoords.top) {
+        centerY = fieldCoords.top;
+    }
+
+    if (centerX + ball.clientWidth > field.clientWidth + fieldCoords.left) {
+        centerX = field.clientWidth + fieldCoords.left - ball.clientWidth;
+    }
+
+    if (centerY + ball.clientHeight > field.clientHeight + fieldCoords.top) {
+        centerY = field.clientHeight + fieldCoords.top - ball.clientHeight;
+    }
+
+    ball.style.left = centerX - fieldCoords.left + 'px'; 
+    ball.style.top = centerY - fieldCoords.top + 'px'; 
+
     isGoal = false;
 }
+
+function startTimer() {
+    isTimerRunning = true;
+    timerInterval = setInterval(() => {
+        timeRemaining--;
+        timerDisplay.textContent = timeRemaining + " сек";
+
+        if (timeRemaining <= 0) {
+            clearInterval(timerInterval);
+            alert("Час вичерпано!");
+            goalCount.textContent = 0;
+            goals = 0;
+            stopButton.style.display = "none";
+            startButton.style.display = "inline-block";
+            isTimerRunning = false;
+        }
+    }, 1000);
+
+    startButton.style.display = "none";
+    stopButton.style.display = "inline-block";
+}
+
+function stopTimer() {
+    clearInterval(timerInterval);
+    startButton.style.display = "inline-block";
+    stopButton.style.display = "none";
+    isTimerRunning = false;
+}
+
+startButton.addEventListener("click", startTimer);
+stopButton.addEventListener("click", stopTimer);
