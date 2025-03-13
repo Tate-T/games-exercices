@@ -13,6 +13,5 @@ import "./js/dark-mode.js";
 import "./js/choose-scientist.js";
 import "./js/football.js";
 import "./js/clicker.js";
-import "./js/cooks-of-future.js";
 import "./js/scrolltotop.js"
 import "./js/footer.js"
