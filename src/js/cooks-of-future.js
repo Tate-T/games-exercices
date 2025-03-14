@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
             div.textContent = fortune;
             div.style.padding = "8px";
             div.style.margin = "10px 0"; 
-            div.style.backgroundColor = "#f8e7a2";
             div.style.border = "1px solid #d4b600";
             div.style.borderRadius = "5px";
             div.style.textAlign = "center";

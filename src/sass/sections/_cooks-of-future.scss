@@ -1,13 +1,13 @@
 .cook-of-future {
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    // width: 200px;
+    // margin-left: auto;
+    // margin-right: auto;
     margin-bottom: 40px;
+    height: 307px;
 
     @media screen and (min-width: 768px) {
         width: 768px;
     }
-
     &__button {
         border-radius: 20px;
         padding: 9px 20px;
@@ -20,7 +20,6 @@
         border: 1px rgba(255, 255, 255, 0) solid;
         color: #fff;
         @media screen and (min-width:768px) {
-            margin-right: 13%;
         }
     }
 
@@ -36,10 +35,10 @@
             height: 90px;
         }
     }
+    
     &__form {
         width: 320px;
         @media screen and (min-width:768px) {
-            margin-right: 13%;
         }
     }
     &__title {
@@ -49,11 +48,9 @@
         font-size: 14px;
         margin-top: 53px;
         font-weight: 400;
-        margin-left: 1%;
 
         @media screen and (min-width: 768px) {
             font-size: 17px;
-            margin-right: 15%;
         }
     }
 }
