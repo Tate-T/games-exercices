@@ -13,8 +13,8 @@ const header = document.querySelector("header");
 const footer = document.querySelector("footer");
 
 siteModeImage.addEventListener("click", () => {
-  const lightModeSrc = "./img/light-mode.webp";
-  const darkModeSrc = "./img/dark-mode.webp";
+  const lightModeSrc = "img/light-mode.webp";
+  const darkModeSrc = "img/dark-mode.webp";
 
   const currentSrc = siteModeImage.getAttribute("src");
 
@@ -42,7 +42,6 @@ siteModeImage.addEventListener("click", () => {
     });
   }
 });
-
 
 arrowPO.addEventListener("mouseover", () => {
   butArrow.style.opacity = 1;
