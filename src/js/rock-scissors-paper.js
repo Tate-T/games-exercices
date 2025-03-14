@@ -19,19 +19,19 @@ function clearActiveClasses() {
 rock.addEventListener("click", () => {
     userChoice = 1;
     clearActiveClasses();
-    rock.style.border = "solid 2px #001";
+    rock.style.border = "dashed gray";
 });
 
 paper.addEventListener("click", () => {
     userChoice = 2;
     clearActiveClasses();
-    paper.style.border = "solid 2px #001";
+    paper.style.border = "dashed gray";
 });
 
 scissors.addEventListener("click", () => {
     userChoice = 3;
     clearActiveClasses();
-    scissors.style.border = "solid 2px #001";
+    scissors.style.border = "dashed gray";
 });
 
 function play(botAnswer) {
@@ -40,9 +40,9 @@ function play(botAnswer) {
 
     if (botAnswer === 1) {
         botChoiceText = "Комп'ютер вибрав Камінь";
-    } else if (botAnswer === 2) {
-        botChoiceText = "Комп'ютер вибрав Ножиці";
     } else if (botAnswer === 3) {
+        botChoiceText = "Комп'ютер вибрав Ножиці";
+    } else if (botAnswer === 2) {
         botChoiceText = "Комп'ютер вибрав Папір";
     }
 
@@ -51,21 +51,24 @@ function play(botAnswer) {
         resultMessage = "Нічия!";
     } else if (
         (userChoice === 1 && botAnswer === 3) ||
-        (userChoice === 3 && botAnswer === 2) ||  
-        (userChoice === 2 && botAnswer === 1)     
+        (userChoice === 2 && botAnswer === 1) ||
+        (userChoice === 3 && botAnswer === 2)
     ) {
-        peopleScore++; // Людина виграє
+        peopleScore++;
         personScore.textContent = peopleScore;
         resultMessage = "Ви виграли раунд!";
         result.style.color = 'green';
     } else {
-        botScore++; // Комп'ютер виграє
+        botScore++;
         compScore.textContent = botScore;
         result.style.color = 'red';
         resultMessage = "Комп'ютер виграв раунд!";
     }
 
     result.textContent = `${resultMessage}. ${botChoiceText}`;
+
+    userChoice = null;
+    clearActiveClasses();
 }
 
 checkResult.addEventListener("click", () => {
@@ -74,5 +77,8 @@ checkResult.addEventListener("click", () => {
 
         let botAnswer = Math.floor(Math.random() * 3) + 1;
         play(botAnswer);
+    } else {
+        result.textContent = "Виберіть один із варіантів";
+        result.style.color = 'black';
     }
 });
