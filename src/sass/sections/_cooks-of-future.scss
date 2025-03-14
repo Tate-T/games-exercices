@@ -1,12 +1,11 @@
 .cook-of-future {
-    // width: 200px;
-    // margin-left: auto;
-    // margin-right: auto;
     margin-bottom: 40px;
     height: 307px;
 
     @media screen and (min-width: 768px) {
         width: 768px;
+        margin-left: auto;
+        margin-right: auto;
     }
     &__button {
         border-radius: 20px;

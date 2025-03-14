@@ -13,7 +13,7 @@ let comboClicks = 0;
 let freezeTimes = [50, 25]; 
 let freezeActive = false; 
 const startButton = document.getElementById("start-button");
-const timerDisplay = document.getElementById("timer");
+const timerDisplay = document.getElementById("timer-clicker");
 const clickArea = document.getElementById("click-area");
 const clickCount = document.getElementById("click-count");
 const clicksText = document.getElementById("clicks-text");
@@ -39,18 +39,20 @@ function startGame() {
     clickArea.classList.add("clicker__click-area--preparation");
     clicksText.classList.add("clicker__clicks-text--hidden");
     phaseDescription.textContent = "Готуйтеся! Гра почнеться через 10 секунд.";
-    timerDisplay.style.color = "rgb(0, 191, 255)"; // Початковий блакитний колір
+    timerDisplay.style.color = "rgb(0, 191, 255)"; 
     let prepTimer = preparationTime;
     timerDisplay.textContent = `00:${prepTimer}`;
     startButton.classList.add("clicker__start-button--hidden");
     let prepInterval = setInterval(() => {
         prepTimer--;
-        timerDisplay.textContent = `00:${prepTimer < 10 ? '0' + prepTimer : prepTimer}`;
-        timerDisplay.style.color = `rgb(0, ${128 + (prepTimer / 10) * 127}, 0)`; // Плавний перехід до зеленого
+        console.log(timerDisplay)
+        timerDisplay.innerHTML = `00:${prepTimer < 10 ? '0' + prepTimer : prepTimer}`;
+        timerDisplay.style.color = `rgb(0, ${128 + (prepTimer / 10) * 127}, 0)`; 
         if (prepTimer <= 0) {
             clearInterval(prepInterval);
             beginClickPhase();
         }
+        
     }, 1000);
 }
 function beginClickPhase() {
@@ -60,7 +62,7 @@ function beginClickPhase() {
     clickArea.classList.remove("clicker__click-area--preparation");
     clickArea.classList.add("clicker__click-area--active");
     clicksText.classList.remove("clicker__clicks-text--hidden");
-    phaseDescription.textContent = "Клікайте по полю, щоб набрати 15,000 очок і знищити зло!Час обмежений – 1 хв 50 сек, але ось ваші бонуси: x2 очки у перші 10 сек,. Якщо за 55 сек у вас менше 7,500 очок – отримаєте +375 очок і x3 множник на 10 сек. На 50с та 25с гра заморожується на 5 сек (кліки не рахуються), після чого ви отримуєте +500 очок. У останні 5 сек множник зростає в 4 рази. Штраф: якщо ви не клікаєте 3+ сек (після 2,000 очок), наступний клік -1,000 очок. Кожні 1,000 очок дають +100 очок і +3 сек.🔥 Готові до бою? ";
+    phaseDescription.textContent = "Клікайте по полю, щоб набрати 10,000 очок і знищити зло!Час обмежений – 1 хв 50 сек,  Якщо за 55 сек у вас менше 5000 очок – отримаєте +375 очок і x3 множник на 10 сек. На 50с та 25с гра заморожується на 5 сек (кліки не рахуються), після чого ви отримуєте +500 очок. У останні 5 сек множник зростає в 4 рази. Штраф: якщо ви не клікаєте 9 сек (після 6,000 очок), наступний клік -3,000 очок. Кожні 1,000 очок дають +100 очок і +3 сек.🔥 Готові до бою? ";
     updateTimer();
 }
 function updateTimer() {
@@ -83,7 +85,7 @@ function updateTimer() {
         if (timeLeft <= 5) {
             activateCrazyMode();
         }
-        if (timeLeft <= 55 && count < 7500 && !bonusGiven) {
+        if (timeLeft <= 55 && count < 5000 && !bonusGiven) {
             giveBonus();
         }
         if (timeLeft <= 0) {
@@ -134,8 +136,8 @@ function handleClick() {
         }
         let points = triplePointsActive ? 80 : doublePointsActive ? 40 : (timeLeft <= 10 ? 40 : 20); 
         count += points;
-         if (count >= 2000 && elapsedTime > 3) { 
-            count -= 1000; 
+         if (count >= 6000 && elapsedTime > 9) { 
+            count -= 3000; 
         }
         clickCount.textContent = `${count}`;
         if (count >= clickLimit) {
