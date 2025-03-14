@@ -8,22 +8,13 @@ function closeModal() {
   modalBackdrop.style.display = "none";
 }
 
-closeModalButtons.forEach(button => {
-  button.addEventListener("click", closeModal);
-});
-
-inputField.addEventListener("input", () => {
-  if (inputField.value.trim() !== "") {
-    saveButton.disabled = false;  // Активуємо кнопку
-  } else {
-    saveButton.disabled = true;   // Деактивуємо кнопку
-  }
-});
-
 saveButton.addEventListener("click", () => {
   const userName = inputField.value.trim();
-  if (userName) {
+  if (userName === "") {
+    alert("Будь ласка, введіть своє ім’я!");
+    return;
+  } else {
     userNameSpan.textContent = userName;
+    closeModal();
   }
-  closeModal();
 });

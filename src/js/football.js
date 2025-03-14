@@ -47,7 +47,7 @@ field.onclick = function (event) {
             goals++;
             goalCount.textContent = goals;
         }, 1000);
-        
+
         setTimeout(resetBall, 3000);
     }
 };
@@ -74,8 +74,8 @@ function resetBall() {
         centerY = field.clientHeight + fieldCoords.top - ball.clientHeight;
     }
 
-    ball.style.left = centerX - fieldCoords.left + 'px'; 
-    ball.style.top = centerY - fieldCoords.top + 'px'; 
+    ball.style.left = centerX - fieldCoords.left + 'px';
+    ball.style.top = centerY - fieldCoords.top + 'px';
 
     isGoal = false;
 }
@@ -85,27 +85,36 @@ function startTimer() {
     timerInterval = setInterval(() => {
         timeRemaining--;
         timerDisplay.textContent = timeRemaining + " сек";
-
         if (timeRemaining <= 0) {
             clearInterval(timerInterval);
-            alert("Час вичерпано!");
             goalCount.textContent = 0;
             goals = 0;
             stopButton.style.display = "none";
             startButton.style.display = "inline-block";
             isTimerRunning = false;
+
+            resetTimer();
         }
     }, 1000);
-
     startButton.style.display = "none";
     stopButton.style.display = "inline-block";
 }
 
 function stopTimer() {
     clearInterval(timerInterval);
+    isTimerRunning = false;
     startButton.style.display = "inline-block";
     stopButton.style.display = "none";
-    isTimerRunning = false;
+    goals = 0;
+    goalCount.textContent = goals;
+    timeRemaining = 30;
+    timerDisplay.textContent = timeRemaining + " сек";
+}
+
+function resetTimer() {
+    timeRemaining = 30;
+    timerDisplay.textContent = timeRemaining + " сек";
+    startTimer();
 }
 
 startButton.addEventListener("click", startTimer);
