@@ -4,7 +4,7 @@ let gameActive = false;
 let timerInterval;
 let preparationTime = 10; 
 let startTime;
-const clickLimit = 15000; 
+const clickLimit = 10000; 
 let bonusGiven = false;
 let triplePointsActive = false; 
 let doublePointsActive = false; 

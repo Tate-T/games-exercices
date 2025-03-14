@@ -14,4 +14,6 @@ import "./js/choose-scientist.js";
 import "./js/football.js";
 import "./js/clicker.js";
 import "./js/scrolltotop.js"
+import "./js/cooks-of-future.js"
+import "./js/clock.js"
 import "./js/footer.js"

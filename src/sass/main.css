@@ -877,7 +877,7 @@ input[type=number]::-webkit-inner-spin-button {
   height: 100px;
   position: absolute;
   top: 60px;
-  right: 0px;
+  right: -15px;
   rotate: 90deg;
 }
 @media screen and (min-width: 320px) {
@@ -885,6 +885,7 @@ input[type=number]::-webkit-inner-spin-button {
     top: 22px;
     width: 50px;
     height: 50px;
+    right: -8px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -901,32 +902,10 @@ input[type=number]::-webkit-inner-spin-button {
     height: 100px;
   }
 }
-.football__second-net {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 60px;
-  rotate: 270deg;
-}
-@media screen and (min-width: 320px) {
-  .football__second-net {
-    top: 22px;
-    width: 50px;
-    height: 50px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .football__second-net {
-    top: 42px;
-    width: 50px;
-    height: 50px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .football__second-net {
-    top: 42px;
-    width: 100px;
-    height: 100px;
+@media screen and (min-width: 1200px) {
+  .football__net {
+    top: 60px;
+    right: -15px;
   }
 }
 .football__field {
@@ -966,6 +945,8 @@ input[type=number]::-webkit-inner-spin-button {
   height: 50px;
   position: absolute;
   transition: all ease-in 1s;
+  left: 80px;
+  top: 80px;
 }
 @media screen and (min-width: 320px) {
   .football__ball {
@@ -984,6 +965,34 @@ input[type=number]::-webkit-inner-spin-button {
     width: 50px;
     height: 50px;
   }
+}
+.football__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.football__timer {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.football__start {
+  border-radius: 20px;
+  background: #000;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  padding: 10px 20px;
+  align-items: flex-start;
+  color: #fff;
+  text-align: right;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .dino {
@@ -1708,10 +1717,6 @@ input[type=number]::-webkit-inner-spin-button {
   color: red;
 }
 
-.high {
-  margin-top: 1px;
-}
-
 .clicker__start-button {
   border-radius: 20px;
   padding: 9px 20px;
@@ -1802,6 +1807,9 @@ input[type=number]::-webkit-inner-spin-button {
   height: 70px;
   background: linear-gradient(to right, rgb(0, 255, 255), rgb(255, 196, 0)) !important;
 }
+.clicker__clicks-text {
+  color: #000 !important;
+}
 .clicker__status-text {
   margin-bottom: 15px;
   margin-top: 15px;
@@ -1825,11 +1833,8 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .cook-of-future {
-  width: 320px;
-  height: px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 120px;
+  margin-bottom: 40px;
+  height: 307px;
 }
 @media screen and (min-width: 768px) {
   .cook-of-future {
@@ -1861,6 +1866,9 @@ input[type=number]::-webkit-inner-spin-button {
     height: 90px;
   }
 }
+.cook-of-future__form {
+  width: 320px;
+}
 .cook-of-future__title {
   text-align: center;
   padding-bottom: 31px;
@@ -1868,13 +1876,52 @@ input[type=number]::-webkit-inner-spin-button {
   font-size: 14px;
   margin-top: 53px;
   font-weight: 400;
-  margin-left: 1%;
 }
 @media screen and (min-width: 768px) {
   .cook-of-future__title {
     font-size: 17px;
-    margin-right: 15%;
   }
+}
+
+.clock__container {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.clock__title {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  margin-left: 22px;
+}
+@media screen and (min-width: 768px) {
+  .clock__title {
+    font-size: 17px;
+    margin-left: 2px;
+  }
+}
+.clock__clock {
+  font-size: 3em;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+  padding-left: 35px;
+}
+@media screen and (min-width: 768px) {
+  .clock__clock {
+    padding-left: 37px;
+  }
+}
+
+select {
+  font-size: 1.2em;
+  padding: 5px;
+  border-radius: 40px;
 }
 
 .footer {
@@ -2112,7 +2159,12 @@ input[type=number]::-webkit-inner-spin-button {
   line-height: 1.7;
 }
 
-body, header, footer, .open-modal, .footer-modal {
+body {
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+header, footer, .open-modal, .footer-modal {
   transition: background-color 0.3s ease;
 }
 
@@ -2136,8 +2188,40 @@ body.dark-mode a {
   color: #f1f1f1;
 }
 
+body::before {
+  z-index: -999;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 320px) {
+  body::before {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 480px) {
+  body::before {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body::before {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body::before {
+    width: 1090px;
+  }
+}
+
 body.dark-mode::before {
-  background-color: gray;
+  background-color: rgb(74, 74, 74);
 }
 
 header.dark-mode, footer.dark-mode {
