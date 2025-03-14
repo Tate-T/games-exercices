@@ -1,7 +1,8 @@
 const dinoPer = document.querySelector(".dino__per");
 const cactus = document.querySelector(".dino__cactus");
 
-let cactusAnimationInterval; // Для збереження інтервалу анімації кактуса
+let cactusAnimationInterval;
+let moveCactus = 200; // Зберігаємо початкове значення для змінної
 
 window.addEventListener("keydown", (event) => {
   if (event.code === "KeyJ") {
@@ -15,16 +16,27 @@ window.addEventListener("keyup", (event) => {
   }
 });
 
-window.addEventListener("keydown", (event) => {
-  if (event.code === "KeyJ" && cactus.style.right !== "910px") {
-    cactus.style.transition = "3s cubic-bezier(0,-0.02,1,.99)";
-    cactus.style.right = "910px";
+const dinoStart = document.querySelector(".dino__start");
 
-    cactusAnimationInterval = setTimeout(() => {
-      cactus.style.transition = "none";
-      cactus.style.right = "200px";
-    }, 3000);
-  }
+dinoStart.addEventListener("click", (event) => {
+  if (cactusAnimationInterval) return;
+
+  cactusAnimationInterval = setInterval(() => {
+    moveCactus += 1;
+    cactus.style.right = `${moveCactus}px`;
+    if (moveCactus >= 900) {
+      moveCactus = 200;
+    }
+  }, 1);
+
+  // if (event.code === "KeyS" && cactus.style.right !== "910px") {
+  //   cactus.style.transition = "3s cubic-bezier(0,-0.02,1,.99)";
+  //   cactus.style.right = "910px";
+  //   cactusAnimationInterval = setInterval(() => {
+  //     cactus.style.transition = "none";
+  //     cactus.style.right = "200px";
+  //   }, 5000);
+  // }
 });
 
 function checkCollision() {
@@ -42,9 +54,10 @@ function checkCollision() {
 }
 
 function stopCactusAnimation() {
-  clearTimeout(cactusAnimationInterval);
-  cactus.style.transition = "none";
+  clearInterval(cactusAnimationInterval);
+  cactusAnimationInterval = null;
   cactus.style.right = "200px";
+  moveCactus = 200; // скидаємо значення moveCactus
 }
 
 setInterval(checkCollision, 50);
