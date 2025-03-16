@@ -13,13 +13,13 @@ const header = document.querySelector("header");
 const footer = document.querySelector("footer");
 
 siteModeImage.addEventListener("click", () => {
-  const lightModeSrc = "./img/light-mode.webp";
-  const darkModeSrc = "./img/dark-mode.webp";
+  // const lightModeSrc = "./img/light-mode.webp";
+  // const darkModeSrc = "./img/dark-mode.webp";
 
   const currentSrc = siteModeImage.getAttribute("src");
 
   if (currentSrc.includes("light-mode.webp")) {
-    siteModeImage.setAttribute("src", darkModeSrc);
+    siteModeImage.setAttribute("src", "../img/dark-mode.webp"); 
     siteModeBut.style.background = "darkgray";
     arrowPO.style.background = "darkgray";
     arrowPO.style.color = "#eee";
@@ -30,7 +30,7 @@ siteModeImage.addEventListener("click", () => {
       modal.classList.add("dark-mode");
     });
   } else {
-    siteModeImage.setAttribute("src", lightModeSrc);
+    siteModeImage.setAttribute("src", "../img/light-mode.webp");
     siteModeBut.style.background = "#eee";
     arrowPO.style.background = "#eee";
     arrowPO.style.color = "#000";
