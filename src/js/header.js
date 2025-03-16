@@ -18,11 +18,15 @@ siteModeImage.addEventListener("click", () => {
 
   const currentSrc = siteModeImage.getAttribute("src");
 
-  if (currentSrc.includes("light.png")) {
+  if (
+    currentSrc.includes(
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQJ4OPSbEA_r3mykRuC7q5IZA7qvriDTr1EU4e1Jbh_JiM-53LAk6ukZ4fd_3vBBjgulI&usqp=CAU"
+    )
+  ) {
     siteModeImage.setAttribute(
       "src",
-      "https://as2.ftcdn.net/jpg/04/82/02/83/1000_F_482028352_1C5TQbH8Ihm5ndnbOCoPwdhV19FnaegY.jpg"
-    ); 
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5aYdSnrutbuZupC6BJ8VvUJ-FJEJ_9Rn7jg&s"
+    );
     siteModeBut.style.background = "darkgray";
     arrowPO.style.background = "darkgray";
     arrowPO.style.color = "#eee";
@@ -33,7 +37,10 @@ siteModeImage.addEventListener("click", () => {
       modal.classList.add("dark-mode");
     });
   } else {
-    siteModeImage.setAttribute("src", "./img/light.png");
+    siteModeImage.setAttribute(
+      "src",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQJ4OPSbEA_r3mykRuC7q5IZA7qvriDTr1EU4e1Jbh_JiM-53LAk6ukZ4fd_3vBBjgulI&usqp=CAU"
+    );
     siteModeBut.style.background = "#eee";
     arrowPO.style.background = "#eee";
     arrowPO.style.color = "#000";
