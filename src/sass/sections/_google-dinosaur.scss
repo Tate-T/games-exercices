@@ -108,4 +108,13 @@
       width: 736px;
     }
   }
+
+  &__result {
+    display: flex;
+    justify-content: center;
+    color: darkred;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
 }

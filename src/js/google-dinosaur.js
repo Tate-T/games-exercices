@@ -1,5 +1,6 @@
 const dinoPer = document.querySelector(".dino__per");
 const cactus = document.querySelector(".dino__cactus");
+const dinoResult = document.querySelector("#dino-result");
 
 let cactusAnimationInterval;
 let moveCactus = 200; // Зберігаємо початкове значення для змінної
@@ -20,6 +21,8 @@ const dinoStart = document.querySelector(".dino__start");
 
 dinoStart.addEventListener("click", (event) => {
   if (cactusAnimationInterval) return;
+
+  dinoResult.textContent = "";
 
   cactusAnimationInterval = setInterval(() => {
     moveCactus += 1;
@@ -50,6 +53,7 @@ function checkCollision() {
     dinoRect.top < cactusRect.bottom
   ) {
     stopCactusAnimation();
+    dinoResult.textContent = "Ви програли! Натисніть на кнопку старт, щоб спробувати ще раз.";
   }
 }
 
