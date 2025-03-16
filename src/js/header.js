@@ -18,8 +18,8 @@ siteModeImage.addEventListener("click", () => {
 
   const currentSrc = siteModeImage.getAttribute("src");
 
-  if (currentSrc.includes("light-mode.webp")) {
-    siteModeImage.setAttribute("src", "./img/dark-mode.webp"); 
+  if (currentSrc.includes("light.png")) {
+    siteModeImage.setAttribute("src", "./img/dark.png"); 
     siteModeBut.style.background = "darkgray";
     arrowPO.style.background = "darkgray";
     arrowPO.style.color = "#eee";
@@ -30,7 +30,7 @@ siteModeImage.addEventListener("click", () => {
       modal.classList.add("dark-mode");
     });
   } else {
-    siteModeImage.setAttribute("src", "./img/light-mode.webp");
+    siteModeImage.setAttribute("src", "./img/light.png");
     siteModeBut.style.background = "#eee";
     arrowPO.style.background = "#eee";
     arrowPO.style.color = "#000";
