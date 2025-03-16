@@ -19,7 +19,10 @@ siteModeImage.addEventListener("click", () => {
   const currentSrc = siteModeImage.getAttribute("src");
 
   if (currentSrc.includes("light.png")) {
-    siteModeImage.setAttribute("src", "./img/dark.png"); 
+    siteModeImage.setAttribute(
+      "src",
+      "https://as2.ftcdn.net/jpg/04/82/02/83/1000_F_482028352_1C5TQbH8Ihm5ndnbOCoPwdhV19FnaegY.jpg"
+    ); 
     siteModeBut.style.background = "darkgray";
     arrowPO.style.background = "darkgray";
     arrowPO.style.color = "#eee";
